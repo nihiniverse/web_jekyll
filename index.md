@@ -42,7 +42,7 @@ title: Nihiniverse - About
                     </div>
                 </div>
                 <a href="https://www.facebook.com/Nihiniverse/" target="_blank" rel="noopener noreferrer">
-                <img alt="Facebook" src="{{ '/assets/images/social_media/facebook.png' | relative_url }}"  class="home-image-social"/></a>
+                <img alt="Facebook" src="/assets/images/social_media/facebook.png"  class="home-image-social"/></a>
             </div>
         <div class="home-image-container">
             <img
