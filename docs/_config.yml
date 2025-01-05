@@ -58,3 +58,9 @@ domain: nihiniverse.com
 url: https://nihiniverse.github.io
 baseurl: /web_jekyll/
 
+defaults:
+  - scope:
+      path: "assets/images"
+    values:
+      image: true
+
