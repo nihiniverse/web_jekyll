@@ -17,32 +17,32 @@ title: Nihiniverse - About
                 </span>
                 <div class="home-checklist">
                     <div class="home-check-item">
-                        <img alt="image" src="assets/images/tick.png" class="home-image-tick"/>
+                        <img alt="tick" src="assets/images/tick.png" class="home-image-tick"/>
                         <span class="home-text4">Innovative Research Development</span>
                     </div>
                     <div class="home-check-item">
-                        <img alt="image" src="assets/images/tick.png" class="home-image-tick"/>
+                        <img alt="tick" src="assets/images/tick.png" class="home-image-tick"/>
                         <span class="home-text4">Knowledge Dissemination</span>
                     </div>
                     <div class="home-check-item">
-                        <img alt="image" src="assets/images/tick.png" class="home-image-tick"/>
+                        <img alt="tick" src="assets/images/tick.png" class="home-image-tick"/>
                         <span class="home-text4">Interdisciplinary Collaboration</span>
                     </div>
                     <div class="home-check-item">
-                        <img alt="image" src="assets/images/tick.png" class="home-image-tick"/>
+                        <img alt="tick" src="assets/images/tick.png" class="home-image-tick"/>
                         <span class="home-text4">Research Excellence</span>
                     </div>
                     <div class="home-check-item">
-                        <img alt="image" src="assets/images/tick.png" class="home-image-tick"/>
+                        <img alt="tick" src="assets/images/tick.png" class="home-image-tick"/>
                         <span class="home-text4">Impactful Solution</span>
                     </div>
                     <div class="home-check-item">
-                        <img alt="image" src="assets/images/tick.png" class="home-image-tick"/>
+                        <img alt="tick" src="assets/images/tick.png" class="home-image-tick"/>
                         <span class="home-text4">Sustainability and Growth</span>
                     </div>
                 </div>
                 <a href="https://www.facebook.com/Nihiniverse/" target="_blank" rel="noopener noreferrer">
-                <img alt="Facebook" src="assets/images/social_media/facebook.png"  class="home-image-social"/></a>
+                <img alt="facebook" src="assets/images/social_media/Facebook.png"  class="home-image-social"/></a>
             </div>
         <div class="home-image-container">
             <img
