@@ -70,19 +70,19 @@
                     class="navigation-links-nav navigation-linksroot-class-name1"
                   >
                     <span class="Navigation-Link navigation-links-text1">
-                      <span>About</span>
+                      <span><a href="/index.html" data-load>About</a></span>
                     </span>
                     <span class="Navigation-Link navigation-links-text1 ">
-                      <span>Bookmarks</span>
+                      <span><a href="/pages/bookmarks.html" data-load>Bookmarks</a></span>
                     </span>
                     <span class="Navigation-Link navigation-links-text1 ">
-                      <span>Tools</span>
+                      <span><a href="/pages/tools.html" data-load>Tools</a></span>
                     </span>
                     <span class="Navigation-Link navigation-links-text1 ">
-                      <span>Resources</span>
+                      <span><a href="/pages/resources.html" data-load>Resources</a></span>
                     </span>
                     <span class="Navigation-Link navigation-links-text1 ">
-                      <span>Learn</span>
+                      <span><a href="/pages/learn.html" data-load>Learn</a></span>
                     </span>
                   </nav>
                 </navigation-links-wrapper>
@@ -198,3 +198,32 @@
       </div>
     </body>
 </html>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const links = document.querySelectorAll('.navigation-links-nav a');
+
+      // Check local storage for an active link
+      const activeLink = localStorage.getItem('activeLink');
+
+      if (activeLink) {
+          // Apply the bold class to the active link
+          links.forEach(link => {
+              if (link.href === activeLink) {
+                  link.classList.add('clicked-link');
+              }
+          });
+      }
+      links.forEach(link => {
+          link.addEventListener('click', function() {
+              // Remove bold class from all links
+              links.forEach(l => l.classList.remove('clicked-link'));
+              
+              // Add bold class to the clicked link
+              this.classList.add('clicked-link');
+
+              // Store the active link in local storage
+              localStorage.setItem('activeLink', this.href);
+          });
+      });
+  });
+</script>

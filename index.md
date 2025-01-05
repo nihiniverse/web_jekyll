@@ -41,6 +41,8 @@ title: Nihiniverse - About
                         <span class="home-text4">Sustainability and Growth</span>
                     </div>
                 </div>
+                <a href="https://www.facebook.com/Nihiniverse/" target="_blank" rel="noopener noreferrer">
+                <img alt="Facebook" src="{{ '/assets/images/social_media/facebook.png' | relative_url }}"  class="home-image-social"/></a>
             </div>
         <div class="home-image-container">
             <img

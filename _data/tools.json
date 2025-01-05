@@ -1,0 +1,158 @@
+[
+   {
+      "name": "Password Generator",
+      "description": "Generating a random password",
+      "url": "pages/mytools/generating_password/index.html",
+      "type": "Text"
+   },
+   {
+      "name": "Identity Generator",
+      "description": "Generating a random idtentity",
+      "url": "pages/mytools/generating_identity/index.html",
+      "type": "Text"
+   },
+   {
+      "name": "Number Convertor",
+      "description": "Convert numbers between different numerical systems",
+      "url": "pages/mytools/number_convert/index.html",
+      "type": "Number"
+   },
+   {
+      "name": "Photo Add Text",
+      "description": "Adding Text into the center of the photo",
+      "url": "pages/mytools/photo/photo_add_text.html",
+      "type": "Photo"
+   },
+   {
+      "name": "Photo to IG",
+      "description": "Check the dimension of the photo and resize for IG",
+      "url": "pages/mytools/photo/phototoig.html",
+      "type": "Photo"
+   },
+   {
+      "name": "IP Checker",
+      "description": "Check Your IP Address",
+      "url": "pages/mytools/ip_check/index.html",
+      "type": "Web"
+   },
+   {
+      "name": "Text Editor",
+      "description": "For editing Text Files",
+      "url": "pages/mytools/text_editor/index.html",
+      "type": "Text"
+   },
+   {
+      "name": "Word Counter",
+      "description": "For counting words in a Text",
+      "url": "pages/mytools/word_count/index.html",
+      "type": "Text"
+   },
+   {
+      "name": "Random Number",
+      "description": "Generating a random number",
+      "url": "pages/mytools/random_number/index.html",
+      "type": "Number"
+   },
+   {
+      "name": "Arithmetic Generator I",
+      "description": "Generating a Simple Arithmetic Question",
+      "url": "pages/mytools/arithmetic_generator/index.html",
+      "type": "Number"
+   },
+   {
+      "name": "Fraction Arithmetic Generator",
+      "description": "Generating a Fraction Arithmetic Question",
+      "url": "pages/mytools/fraction_arithmetic_generator/index.html",
+      "type": "Number"
+   },
+   {
+      "name": "2048 Game",
+      "description": "2048 Game",
+      "url": "pages/mytools/2048/index.html",
+      "type": "Game"
+   },
+   {
+      "name": "Random English Word",
+      "description": "Generating a random English Word",
+      "url": "pages/mytools/random_english_word/index.html",
+      "type": "Text"
+   },
+   {
+      "name": "Random Chinese Word",
+      "description": "Generating a random Chinese Word",
+      "url": "pages/mytools/random_chinese_word/index.html",
+      "type": "Text"
+   },
+   {
+      "name": "Country Code",
+      "description": "Country Code Lookup Table",
+      "url": "pages/mytools/country_code/index.html",
+      "type": "Others"
+   },   
+   {
+      "name": "Stop Watch",
+      "description": "Stop Watch",
+      "url": "pages/mytools/stopwatch/index.html",
+      "type": "Others"
+   },
+   {
+      "name": "Tetris",
+      "description": "Tetris",
+      "url": "pages/mytools/tetris/index.html",
+      "type": "Game"
+   },
+   {
+      "name": "Snake",
+      "description": "Snake",
+      "url": "pages/mytools/snake/index.html",
+      "type": "Game"
+   },
+   {
+      "name": "Stepping on Mines",
+      "description": "Stepping on Mines",
+      "url": "pages/mytools/steponmines/index.html",
+      "type": "Game"
+   },
+   {
+      "name": "BlackJack",
+      "description": "BlackJack",
+      "url": "pages/mytools/blackjack/index.html",
+      "type": "Game"
+   },
+   {
+      "name": "Cosmic Dodge",
+      "description": "Cosmic Dodge",
+      "url": "pages/mytools/cosmic_dodge/index.html",
+      "type": "Game"
+   },
+   {
+      "name": "Alarm Clock",
+      "description": "Alarm Clock",
+      "url": "pages/mytools/alarm/index.html",
+      "type": "Others"
+   },
+   {
+      "name": "Timer",
+      "description": "Count Down Time",
+      "url": "pages/mytools/counttime/index.html",
+      "type": "Others"
+   },
+   {
+      "name": "Youtube Player",
+      "description": "Open a custom window for youtube to play",
+      "url": "pages/mytools/youtube_player/index.html",
+      "type": "Others"
+   },
+   {
+      "name": "Arithmetic Generator II",
+      "description": "Generating a Complex Arithmetic Question",
+      "url": "pages/mytools/arithmetic_generator_2/index.html",
+      "type": "Number"
+   },
+   {
+      "name": "Image Viewer",
+      "description": "View Images",
+      "url": "pages/mytools/photo/photo_viewer.html",
+      "type": "Photo"
+   }
+]
