@@ -52,7 +52,7 @@ plugins:
 #   - vendor/gems/
 #   - vendor/ruby/
 
-domain: nihiniverse.com
+domain: nihiniverse.github.io
 url: https://nihiniverse.github.io
 baseurl: /web_jekyll
 
