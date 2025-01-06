@@ -1,0 +1,121 @@
+<header data-role="Header" class="navigation-header">
+    <div class="navigation-max-width">
+        <img alt="logo" src="{{ site.baseurl }}/assets/images/layouts/logo_top.png" width="231" height="54" />
+        <div class="navigation-nav1">
+        <navigation-links-wrapper
+            class="navigation-links-wrapper"
+            rootclassname="navigation-linksundefined"
+        >
+            <!--NavigationLinks component-->
+            <nav
+            class="navigation-links-nav navigation-linksroot-class-name1"
+            >
+            <span class="Navigation-Link navigation-links-text1">
+                <span><a href="{{ site.baseurl }}/index.html" data-load id="about">About</a></span>
+            </span>
+            <span class="Navigation-Link navigation-links-text1 ">
+                <span><a href="{{ site.baseurl }}/pages/bookmarks.html" data-load>Bookmarks</a></span>
+            </span>
+            <span class="Navigation-Link navigation-links-text1 ">
+                <span><a href="{{ site.baseurl }}/pages/tools.html" data-load>Tools</a></span>
+            </span>
+            <span class="Navigation-Link navigation-links-text1 ">
+                <span><a href="{{ site.baseurl }}/pages/resources.html" data-load>Resources</a></span>
+            </span>
+            <span class="Navigation-Link navigation-links-text1 ">
+                <span><a href="{{ site.baseurl }}/pages/learn.html" data-load>Learn</a></span>
+            </span>
+            </nav>
+        </navigation-links-wrapper>
+        </div>
+        <div data-role="BurgerMenu" class="navigation-burger-menu">
+        <svg viewBox="0 0 1024 1024" class="navigation-icon1">
+            <path
+            d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+            ></path>
+        </svg>
+        </div>
+        <div data-role="MobileMenu" class="mobile-menu">
+        <div class="navigation-nav2">
+            <div class="navigation-container">
+            <img alt="logo" src="{{ site.baseurl }}/assets/images/layouts/logo_top.png" width="231" height="54"/>
+            <div
+                data-role="CloseMobileMenu"
+                class="navigation-close-mobile-menu"
+            >
+                <svg viewBox="0 0 1024 1024" class="navigation-icon3">
+                <path
+                    d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                ></path>
+                </svg>
+            </div>
+            </div>
+            <navigation-links-wrapper-ulep
+            class="navigation-links-wrapper-ulep"
+            rootclassname="navigation-linksundefined"
+            >
+            <!--NavigationLinks component-->
+            <nav
+                class="navigation-links-nav1 navigation-linksroot-class-name1"
+            >
+                <span class="Navigation-Link navigation-links-text2 ">
+                <span>About</span>
+                </span>
+                <span class="Navigation-Link navigation-links-text2 ">
+                <span>Bookmarks</span>
+                </span>
+                <span class="Navigation-Link navigation-links-text2 ">
+                <span>Tools</span>
+                </span>
+                <span class="Navigation-Link navigation-links-text2 ">
+                <span>Resources</span>
+                </span>
+                <span class="Navigation-Link navigation-links-text2 ">
+                <span>Learn</span>
+                </span>
+            </nav>
+            </navigation-links-wrapper-ulep>
+        </div>
+        </div>
+    </div>
+</header>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+      const links = document.querySelectorAll('.navigation-links-nav a');
+      // Check local storage for an active link
+      const activeLink = localStorage.getItem('activeLink');
+      const footerLinks = document.querySelectorAll('.footer-links'); // Select footer links
+      const aboutLink = document.getElementById('about');
+      console.log(activeLink);
+      if (activeLink) {
+          // Apply the bold class to the active link
+          links.forEach(link => {
+              if (link.href === activeLink) {
+
+                  link.classList.add('clicked-link');
+              }
+          });
+      }
+      links.forEach(link => {
+          link.addEventListener('click', function() {
+              // Remove bold class from all links
+              links.forEach(l => l.classList.remove('clicked-link'));
+              
+              // Add bold class to the clicked link
+              this.classList.add('clicked-link');
+
+              // Store the active link in local storage
+              localStorage.setItem('activeLink', this.href);
+          });
+      });
+        // Add click event for footer links
+        footerLinks.forEach(link1 => {
+            link1.addEventListener('click', function() {
+                links.forEach(l => l.classList.remove('clicked-link')); // Remove clicked class
+                aboutLink.classList.add('clicked-link'); // Add clicked class to About link
+                localStorage.setItem('activeLink', "{{ site.baseurl }}/index.html"); // Adjust the link as necessary
+            });
+        });
+    });
+</script>

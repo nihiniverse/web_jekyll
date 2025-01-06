@@ -2,37 +2,37 @@
    {
       "name": "Password Generator",
       "description": "Generating a random password",
-      "url": "pages/mytools/generating_password/index.html",
+      "url": "mytools/generating_password.html",
       "type": "Text"
    },
    {
       "name": "Identity Generator",
       "description": "Generating a random idtentity",
-      "url": "pages/mytools/generating_identity/index.html",
+      "url": "mytools/generating_identity.html",
       "type": "Text"
    },
    {
       "name": "Number Convertor",
       "description": "Convert numbers between different numerical systems",
-      "url": "pages/mytools/number_convert/index.html",
+      "url": "mytools/number_convert.html",
       "type": "Number"
    },
    {
       "name": "Photo Add Text",
       "description": "Adding Text into the center of the photo",
-      "url": "pages/mytools/photo/photo_add_text.html",
+      "url": "mytools/photo.html",
       "type": "Photo"
    },
    {
       "name": "Photo to IG",
       "description": "Check the dimension of the photo and resize for IG",
-      "url": "pages/mytools/photo/phototoig.html",
+      "url": "mytools/photo/phototoig.html",
       "type": "Photo"
    },
    {
       "name": "IP Checker",
       "description": "Check Your IP Address",
-      "url": "pages/mytools/ip_check/index.html",
+      "url": "mytools/ip_check.html",
       "type": "Web"
    },
    {

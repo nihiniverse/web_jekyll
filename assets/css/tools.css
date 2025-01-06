@@ -1,0 +1,77 @@
+/* table */
+.table_password {
+    border-collapse: collapse;
+    width: 50%;
+    margin:8px;
+    margin-bottom: 10px;
+    border: none;
+}
+.table_password td,
+.table_password th {
+    border: none;
+}
+input[type="number"] {
+    font-size: 22px;
+    text-align: center;
+    border: 2px solid var(--dl-color-scheme-black);
+    border-radius: 4px;
+    margin: -5px;
+    box-sizing: border-box;
+}
+.left {
+    text-align: left;
+}
+.right {
+    text-align: center;
+}
+/* checkbox */
+input[type="checkbox"] {
+    -webkit-transform: scale(1.5); /* Scale up for WebKit browsers */
+    -moz-transform: scale(1.5); /* Scale up for Firefox */
+    -ms-transform: scale(1.5); /* Scale up for Internet Explorer */
+    transform: scale(1.5); /* Scale up for standard browsers */
+    margin-right: 15px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+    accent-color: var(--dl-color-scheme-brown);
+}
+input[type="checkbox"]:checked {
+    background-color: var(--dl-color-scheme-brown); 
+}
+/* Button */
+button.btn {
+    font-size: 20px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    background-color: var(--dl-color-scheme-white); /* Set a background color for the button */
+    color: var(--dl-color-scheme-black); /* Set text color */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for 3D effect */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+button.btn:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    color: var(--dl-color-scheme-brown);
+    transform: translateY(-2px);
+}
+.password-display {
+    width: 50%;
+    height: 100px;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 24px;
+    color: var(--dl-color-scheme-brown);
+    box-sizing: border-box;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.containers {
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+
