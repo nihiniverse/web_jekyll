@@ -1,7 +1,7 @@
 var chinese_words = [];
 async function load_chi_words() {
     // Load Chinese words here...
-    const response = await fetch(location.origin + '/terrence_world/data/csv/mandarin_words.csv');
+    const response = await fetch(location.origin + '/data/csv/mandarin_words.csv');
     const text = await response.text();
     const lines = text.split('\n');
     const headers = lines[0].split(',');
@@ -80,18 +80,18 @@ function generateWord() {
     document.getElementById("word_rank").innerHTML = "Rank: " + wordrank;
     //
     dictLinks = document.getElementById("dict_links")
-    dictLinks.innerHTML = "More: "
+    dictLinks.innerHTML = "<b>More: </b>"
     const url1 = 'https://www.mdbg.net/chinese/dictionary?page=worddict&wdrst=1&wdqb=' + randWord;
-    dictLinks.innerHTML = dictLinks.innerHTML + '<a href=' + url1 + ' target="_blank">MDBG</a>';
+    dictLinks.innerHTML = dictLinks.innerHTML + '<a class = "href-link" href=' + url1 + ' target="_blank">MDBG</a>';
     dictLinks.innerHTML = dictLinks.innerHTML + " | ";
     const url2 = 'https://www.collinsdictionary.com/dictionary/chinese_traditional-english/' + randWord;
-    dictLinks.innerHTML = dictLinks.innerHTML + '<a href=' + url2 + ' target="_blank">Collins</a>';
+    dictLinks.innerHTML = dictLinks.innerHTML + '<a class = "href-link" href=' + url2 + ' target="_blank">Collins</a>';
     dictLinks.innerHTML = dictLinks.innerHTML + " | ";
     const url3 = 'https://www.trainchinese.com/v2/search.php?searchWord=' + randWord;
-    dictLinks.innerHTML = dictLinks.innerHTML + '<a href=' + url3 + ' target="_blank">Train Chinese</a>';
+    dictLinks.innerHTML = dictLinks.innerHTML + '<a class = "href-link" href=' + url3 + ' target="_blank">Train Chinese</a>';
     dictLinks.innerHTML = dictLinks.innerHTML + " | ";
     const url4 = 'https://chinese.yabla.com/chinese-english-pinyin-dictionary.php?define=' + randWord;
-    dictLinks.innerHTML = dictLinks.innerHTML + '<a href=' + url4 + ' target="_blank">Yabla</a>';
+    dictLinks.innerHTML = dictLinks.innerHTML + '<a class = "href-link" href=' + url4 + ' target="_blank">Yabla</a>';
 }
 async function translate(word) {
     const targetLanguage = document.getElementById("target-language").value;

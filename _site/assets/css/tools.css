@@ -6,23 +6,43 @@
     margin-bottom: 10px;
     border: none;
 }
+.table_identity {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 10px;
+    max-width: 600px; 
+    border: none;
+}
+.table_word_count {
+    font-size: 14px;
+    border-collapse: collapse;
+    width: 40%;
+    margin:8px auto;
+    margin-bottom: 10px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.table_center {
+    border-collapse: collapse;
+    width: auto;
+    margin: auto;
+    border: none;
+}
+.table_word_count th,
+.table_word_count td {
+    padding: 4px 4px; /* Adjust padding to reduce row height */
+}
+.table_center th,
+.table_center td,
+.table_word_count td,
+.table_word_count th,
+.table_identity td,
+.table_identity th,
 .table_password td,
 .table_password th {
     border: none;
-}
-input[type="number"] {
-    font-size: 22px;
-    text-align: center;
-    border: 2px solid var(--dl-color-scheme-black);
-    border-radius: 4px;
-    margin: -5px;
-    box-sizing: border-box;
-}
-.left {
-    text-align: left;
-}
-.right {
-    text-align: center;
 }
 /* checkbox */
 input[type="checkbox"] {
@@ -37,23 +57,33 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked {
     background-color: var(--dl-color-scheme-brown); 
 }
-/* Button */
-button.btn {
-    font-size: 20px;
-    padding: 8px 16px;
+.fraction-input {
+    font-size: 22px;
+    width: 100px;
+    border: 2px solid var(--dl-color-scheme-black);
     border-radius: 4px;
-    border: none;
-    cursor: pointer;
-    background-color: var(--dl-color-scheme-white); /* Set a background color for the button */
-    color: var(--dl-color-scheme-black); /* Set text color */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for 3D effect */
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
+    margin: -5px;
+    text-align: center;
 }
-button.btn:hover {
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-    color: var(--dl-color-scheme-brown);
-    transform: translateY(-2px);
+.fraction-input2 {
+    font-size: 22px;
+    width: 150px;
+    border: 2px solid var(--dl-color-scheme-black);
+    border-radius: 4px;
+    margin: -5px;
+    text-align: center;
 }
+/* text */
+.word-count {
+    font-size: 16px;
+    margin: 5px;
+}
+.word-count p {
+    line-height: 1.6; /* Improve line spacing for better readability */
+}
+.correct { color: blue; }
+.incorrect { color: red; }
+/* password */
 .password-display {
     width: 50%;
     height: 100px;
@@ -69,9 +99,85 @@ button.btn:hover {
     justify-content: center;
     text-align: center;
 }
-.containers {
-    display: flex;
-    justify-content: center;
-    margin: 10px 0;
+/* By ID */
+#rand-word {
+   text-align: center;
+   font-weight: bold;
+   color : var(--dl-color-scheme-brown);
+   font-size: 40px;
+   margin: 5px;
 }
-
+#trans_word {
+    text-align: center;
+    font-weight: bold;
+    color : var(--dl-color-scheme-black);
+    font-size: 30px;
+    margin: 10px;
+}
+#word_meaning {
+    text-align: center;
+    font-weight: bold;
+    color : var(--dl-color-scheme-black);
+    font-size: 30px;
+    margin: 20px;
+}
+#word_rank {
+    font-weight: bold;
+    text-align: center;
+    color : var(--dl-color-scheme-brown);
+    font-size: 20px;
+    margin: 15px;
+}
+#operator, #num1-min, #num1-max, #num2-min, #num2-max {
+    font-size: 22px;
+    width: 150px; /* Adjust the width value as needed */
+    color: var(--dl-color-scheme-black);
+}
+#question {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: var(--dl-color-scheme-brown);
+}
+#generate {
+    margin-top: 10px;
+}
+#answer{
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    width: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: var(--dl-color-scheme-black);
+}
+#result {
+    margin-top: 10px;
+    font-weight: bold;
+    font-size: 30px;
+}
+#ran_num_output {
+    width: 40%;
+    height: 80px;
+    padding: 16px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    font-size: 24px;
+    color: var(--dl-color-scheme-brown);
+    box-sizing: border-box;
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.table_center td.active-question {
+    border-bottom: 2px solid var(--dl-color-scheme-brown);
+}
+#result td.active-question {
+    border-bottom: 2px solid red;
+}
+#num1num, #num2num {
+    display: inline-block;
+}

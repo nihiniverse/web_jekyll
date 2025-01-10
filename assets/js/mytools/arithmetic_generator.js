@@ -1,4 +1,4 @@
-var identifier = document.querySelector('.containers');
+var identifier = document.querySelector('.home-max-width');
 if (identifier .getAttribute('title') === null){
     identifier .setAttribute("title", "");
 

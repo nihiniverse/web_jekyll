@@ -18,10 +18,10 @@ function generateRandomNumber() {
     randomNumber = randomNumber.toFixed(decimalPlaces);
 
     // Display the random number on the page
-    document.getElementById('textoutput').value = randomNumber;
+    document.getElementById('ran_num_output').value = randomNumber;
 }
 function copyPassword() {
-    var randomNumber = document.getElementById('textoutput');
+    var randomNumber = document.getElementById('ran_num_output');
     randomNumber.select();
     document.execCommand('copy');
 }

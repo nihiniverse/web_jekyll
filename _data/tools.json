@@ -20,7 +20,7 @@
    {
       "name": "Photo Add Text",
       "description": "Adding Text into the center of the photo",
-      "url": "mytools/photo.html",
+      "url": "mytools/photo_add_text.html",
       "type": "Photo"
    },
    {
@@ -38,121 +38,121 @@
    {
       "name": "Text Editor",
       "description": "For editing Text Files",
-      "url": "pages/mytools/text_editor/index.html",
+      "url": "mytools/text_editor.html",
       "type": "Text"
    },
    {
       "name": "Word Counter",
       "description": "For counting words in a Text",
-      "url": "pages/mytools/word_count/index.html",
+      "url": "mytools/word_count.html",
       "type": "Text"
    },
    {
       "name": "Random Number",
       "description": "Generating a random number",
-      "url": "pages/mytools/random_number/index.html",
+      "url": "mytools/random_number.html",
       "type": "Number"
    },
    {
       "name": "Arithmetic Generator I",
       "description": "Generating a Simple Arithmetic Question",
-      "url": "pages/mytools/arithmetic_generator/index.html",
+      "url": "mytools/arithmetic_generator.html",
       "type": "Number"
    },
    {
       "name": "Fraction Arithmetic Generator",
       "description": "Generating a Fraction Arithmetic Question",
-      "url": "pages/mytools/fraction_arithmetic_generator/index.html",
+      "url": "mytools/fraction_arithmetic_generator.html",
       "type": "Number"
    },
    {
       "name": "2048 Game",
       "description": "2048 Game",
-      "url": "pages/mytools/2048/index.html",
+      "url": "mytools/2048.html",
       "type": "Game"
    },
    {
       "name": "Random English Word",
       "description": "Generating a random English Word",
-      "url": "pages/mytools/random_english_word/index.html",
+      "url": "mytools/random_english_word.html",
       "type": "Text"
    },
    {
       "name": "Random Chinese Word",
       "description": "Generating a random Chinese Word",
-      "url": "pages/mytools/random_chinese_word/index.html",
+      "url": "mytools/random_chinese_word.html",
       "type": "Text"
    },
    {
       "name": "Country Code",
       "description": "Country Code Lookup Table",
-      "url": "pages/mytools/country_code/index.html",
+      "url": "mytools/country_code.html",
       "type": "Others"
    },   
    {
       "name": "Stop Watch",
       "description": "Stop Watch",
-      "url": "pages/mytools/stopwatch/index.html",
+      "url": "mytools/stopwatch.html",
       "type": "Others"
    },
    {
       "name": "Tetris",
       "description": "Tetris",
-      "url": "pages/mytools/tetris/index.html",
+      "url": "mytools/tetris.html",
       "type": "Game"
    },
    {
       "name": "Snake",
       "description": "Snake",
-      "url": "pages/mytools/snake/index.html",
+      "url": "mytools/snake.html",
       "type": "Game"
    },
    {
       "name": "Stepping on Mines",
       "description": "Stepping on Mines",
-      "url": "pages/mytools/steponmines/index.html",
+      "url": "mytools/steponmines.html",
       "type": "Game"
    },
    {
       "name": "BlackJack",
       "description": "BlackJack",
-      "url": "pages/mytools/blackjack/index.html",
+      "url": "mytools/blackjack.html",
       "type": "Game"
    },
    {
       "name": "Cosmic Dodge",
       "description": "Cosmic Dodge",
-      "url": "pages/mytools/cosmic_dodge/index.html",
+      "url": "mytools/cosmic_dodge.html",
       "type": "Game"
    },
    {
       "name": "Alarm Clock",
       "description": "Alarm Clock",
-      "url": "pages/mytools/alarm/index.html",
+      "url": "mytools/alarm.html",
       "type": "Others"
    },
    {
       "name": "Timer",
       "description": "Count Down Time",
-      "url": "pages/mytools/counttime/index.html",
+      "url": "mytools/counttime.html",
       "type": "Others"
    },
    {
       "name": "Youtube Player",
       "description": "Open a custom window for youtube to play",
-      "url": "pages/mytools/youtube_player/index.html",
+      "url": "mytools/youtube_player.html",
       "type": "Others"
    },
    {
       "name": "Arithmetic Generator II",
       "description": "Generating a Complex Arithmetic Question",
-      "url": "pages/mytools/arithmetic_generator_2/index.html",
+      "url": "mytools/arithmetic_generator_2.html",
       "type": "Number"
    },
    {
       "name": "Image Viewer",
       "description": "View Images",
-      "url": "pages/mytools/photo/photo_viewer.html",
+      "url": "mytools/photo/photo_viewer.html",
       "type": "Photo"
    }
 ]

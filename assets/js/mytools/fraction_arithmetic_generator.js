@@ -1,4 +1,4 @@
-var identifier = document.querySelector('.containers');
+var identifier = document.querySelector('.home-max-width');
 if (identifier.getAttribute('title') === null){ 
     identifier.setAttribute("title", "");
 
@@ -53,10 +53,11 @@ function generateQuestion() {
 
     num1numElement.textContent = num1num;
     num2numElement.textContent = num2num;
+    num1numElement.classList.add('active-question');
+    num2numElement.classList.add('active-question');
     document.getElementById('operater').textContent = operator;
     document.getElementById('num1deno').textContent = num1deno;
     document.getElementById('num2deno').textContent = num2deno;
-    
 }
 
 function generateRandom() {
@@ -120,6 +121,7 @@ function checkAnswer() {
       resultMessage = 'Incorrect. Answer: '
       resultnumElement.textContent = correctAnswer.n
       resultdenoElement.textContent = correctAnswer.d
+      resultnumElement.classList.add('active-question');
       resultElement.classList.remove('correct');
       resultElement.classList.add('incorrect');
     }

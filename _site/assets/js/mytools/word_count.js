@@ -1,4 +1,4 @@
-var identifier = document.querySelector('.containers');
+var identifier = document.querySelector('.containers_center');
 if (identifier .getAttribute('title') === null){
     identifier .setAttribute("title", "");
     function countWords() {
@@ -84,9 +84,9 @@ if (identifier .getAttribute('title') === null){
         englishWordCountElement.textContent = englishWordCount;
 
         // Update the word frequency element
-        var frequencyTable = "<table class='table_border noborder width50'><tr><td class='center'><b>Counts by Words</b></td></tr>";
+        var frequencyTable = "<table class='table_word_count'><tr><td class='center brown_bold font20' colspan='2'><b>Counts by Words</h2></b></td></tr>";
         wordFrequencyArray.forEach(function(pair) {
-            frequencyTable += "<tr><td>" + pair[0] + "</td><td>" + pair[1] + "</td></tr>";
+            frequencyTable += "<tr><td class='left noborder'>" + pair[0] + "</td><td class='right noborder'>" + pair[1] + "</td></tr>";
         });
         frequencyTable += "</table>";
         wordFrequencyElement.innerHTML = frequencyTable;

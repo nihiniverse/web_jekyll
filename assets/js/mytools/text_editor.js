@@ -11,9 +11,10 @@ if (containers_id === null){
         newTab.setAttribute("id", "tab" + tabCounter);
         var newTextArea = document.createElement("textarea");
         newTab.appendChild(newTextArea);
-        document.querySelector(".containers").insertBefore(newTab, document.querySelector(".tab-links"));
+        document.querySelector(".containers_center").insertBefore(newTab, document.querySelector(".tab-links"));
+        newTextArea.classList.add("text_area");
         var newTabLink = document.createElement("button");
-        newTabLink.classList.add("btn_s", "tab-link");
+        newTabLink.classList.add("btn", "btn_s", "tab-link");
         newTabLink.setAttribute("data-tab", "tab" + tabCounter);
         newTabLink.innerHTML = "Tab " + tabCounter;
         newTabLink.addEventListener("click", function() {
@@ -94,11 +95,32 @@ if (containers_id === null){
         var byteWordCount = text.match(/[^\x00-\xff]+/g)?.length || 0;
 
         document.getElementById("word-count").innerHTML = `
-            <p><b>Word Counts</b></p>
-            <p>Total Characters: ${charCount}<br>No. of Digits: ${digitCount}<br>No. of Lines: ${lineCount}<br>
-            No. of Chinese Characters: ${chineseCharCount} | No. of Chinese Punctuation: ${chinesePunctCount}<br>
-            No. of English Characters: ${englishCharCount} | No. of English Punctuation: ${englishPunctCount}<br>
-            No. of English Words: ${englishWordCount} | No. of Byte Words: ${byteWordCount}</p>
+        <p><b>Word Counts</b></p>
+        <p>
+            Total Characters: <span class="count">${charCount}</span><br>
+            No. of Digits: <span class="count">${digitCount}</span><br>
+            No. of Lines: <span class="count">${lineCount}</span><br>
+            No. of Chinese Characters: <span class="count">${chineseCharCount}</span> | 
+            No. of Chinese Punctuation: <span class="count">${chinesePunctCount}</span><br>
+            No. of English Characters: <span class="count">${englishCharCount}</span> | 
+            No. of English Punctuation: <span class="count">${englishPunctCount}</span><br>
+            No. of English Words: <span class="count">${englishWordCount}</span> | 
+            No. of Byte Words: <span class="count">${byteWordCount}</span>
+        </p>
         `;
     }
 }
+// Select the active tab link
+const activeTabLink = document.querySelector('.tab-link.active');
+
+// Add click event listener to the active tab link
+activeTabLink.addEventListener('click', function() {
+    // Prompt the user for a new tab name
+    const newTabName = prompt('Enter new tab name:', activeTabLink.textContent);
+    
+    // If the user provided a new name
+    if (newTabName) {
+        // Update the tab link text
+        activeTabLink.textContent = newTabName;
+    }
+});

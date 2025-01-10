@@ -5,7 +5,7 @@ var selectedSurname = '';
 
 async function loadNames() {
     //Load names data here...
-    const response = await fetch(location.origin + '/terrence_world/data/csv/firstnames.csv');
+    const response = await fetch(location.origin + '/data/csv/firstnames.csv');
     const text = await response.text();
     const lines = text.split('\n');
     const headers = lines[0].split(',');
@@ -25,7 +25,7 @@ async function loadNames() {
 
 async function loadSurnames() {
     //Load surnames data here...
-    const response = await fetch(location.origin + '/terrence_world/data/csv/surnames.csv');
+    const response = await fetch(location.origin + '/data/csv/surnames.csv');
     const text = await response.text();
     const lines = text.split('\n');
     const headers = lines[0].split(',');

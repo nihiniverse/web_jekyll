@@ -1,7 +1,7 @@
 var english_words = []
 async function loadNames() {
     //Load english words here...
-    const response = await fetch(location.origin + '/terrence_world/data/csv/english_words.csv');
+    const response = await fetch(location.origin + '/data/csv/english_words.csv');
     const text = await response.text();
     const lines = text.split('\n');
     const headers = lines[0].split(',');
@@ -58,27 +58,30 @@ function generateWord() {
     document.getElementById("word_rank").innerHTML = "Rank: " + wordrank;
     //
     dictLinks = document.getElementById("dict_links")
-    dictLinks.innerHTML = "More: "
+    dictLinks.innerHTML = "<b>More: </b>"
     const url1 = 'https://dictionary.cambridge.org/dictionary/english-chinese-traditional/' + randWord;
-    dictLinks.innerHTML = dictLinks.innerHTML + '<a href=' + url1 + ' target="_blank">Cambridge</a>';
+    dictLinks.innerHTML = dictLinks.innerHTML + '<a class = "href-link" href=' + url1 + ' target="_blank">Cambridge</a>';
     dictLinks.innerHTML = dictLinks.innerHTML + " | ";
     const url2 = 'https://www.oed.com/search/dictionary/?scope=Entries&q=' + randWord;
-    dictLinks.innerHTML = dictLinks.innerHTML + '<a href=' + url2 + ' target="_blank">Oxford</a>';
+    dictLinks.innerHTML = dictLinks.innerHTML + '<a class = "href-link" href=' + url2 + ' target="_blank">Oxford</a>';
     dictLinks.innerHTML = dictLinks.innerHTML + " | ";
     const url3 = 'https://www.merriam-webster.com/dictionary/' + randWord;
-    dictLinks.innerHTML = dictLinks.innerHTML + '<a href=' + url3 + ' target="_blank">Merriam-Webster</a>';
+    dictLinks.innerHTML = dictLinks.innerHTML + '<a class = "href-link" href=' + url3 + ' target="_blank">Merriam-Webster</a>';
     dictLinks.innerHTML = dictLinks.innerHTML + " | ";
     const url4 = 'https://www.dictionary.com/browse/' + randWord;
-    dictLinks.innerHTML = dictLinks.innerHTML + '<a href=' + url4 + ' target="_blank">Dictionary.com</a>';
+    dictLinks.innerHTML = dictLinks.innerHTML + '<a class = "href-link" href=' + url4 + ' target="_blank">Dictionary.com</a>';
 }
 async function translate(word) {
     const targetLanguage = document.getElementById("target-language").value;
-    const res = await fetch("https://translate.argosopentech.com/translate", {
+    const res = await fetch("https://libretranslate.com/translate", {
         method: "POST",
         body: JSON.stringify({
             q: word,
             source: "en",
             target: targetLanguage,
+            format: "text",
+            alternatives: 3,
+            api_key: ""
         }),
         headers: { "Content-Type": "application/json" }
     });
