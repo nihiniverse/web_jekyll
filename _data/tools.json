@@ -26,7 +26,7 @@
    {
       "name": "Photo to IG",
       "description": "Check the dimension of the photo and resize for IG",
-      "url": "mytools/photo/phototoig.html",
+      "url": "mytools/phototoig.html",
       "type": "Photo"
    },
    {

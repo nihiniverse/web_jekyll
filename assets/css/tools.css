@@ -6,6 +6,13 @@
     margin-bottom: 10px;
     border: none;
 }
+.table60 {
+    border-collapse: collapse;
+    width: 60%;
+    margin:8px;
+    margin-bottom: 10px;
+    border: none;
+}
 .table_identity {
     border-collapse: collapse;
     width: 100%;
@@ -180,4 +187,32 @@ input[type="checkbox"]:checked {
 }
 #num1num, #num2num {
     display: inline-block;
+}
+label[for="fileInput"],
+label[for="textInput"],
+label[for="fontSizeInput"],
+label[for="fontStyleInput"],
+label[for="colorInput"],
+label[for="length"],
+label[for="customColorInput"] 
+{
+    font-size: 20px;
+}
+textarea {
+    font-family: inherit;
+    font-size: inherit;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+#generate {
+    margin-top: 20px;
+}
+#copy {
+    margin-top: 0px;
+}
+#canvas {
+    margin: 0 auto;
+    display: block;
 }

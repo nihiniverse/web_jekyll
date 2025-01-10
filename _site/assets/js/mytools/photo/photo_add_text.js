@@ -1,4 +1,4 @@
-var title_ = document.querySelector(".title");
+var title_ = document.querySelector(".title-text1");
 var title_id = title_.getAttribute('id');
 if (title_id === null){
     let canvas = document.getElementById("photo_canvas");
