@@ -1,7 +1,4 @@
-var identifier = document.querySelector('.containers');
-if (identifier .getAttribute('title') === null){
-    identifier .setAttribute("title", "");
-
+var identifier = document.querySelector('.game-containers');
 var gameBoard = document.getElementById("gameboard");
 var cells = [];
 var score = 0;
@@ -214,11 +211,10 @@ function saveGame() {
     downloadLink.href = URL.createObjectURL(new Blob([gameDataString], { type: "application/json" }));
     downloadLink.download = "gameData.json";
     downloadLink.click();
-  }
+}
   // Load game data to local storage
-  function loadGameDataFromFile(file) {
+function loadGameDataFromFile(file) {
     const reader = new FileReader();
-
     reader.onload = function(e) {
       const gameDataString = e.target.result;
       const gameData = JSON.parse(gameDataString);
@@ -228,14 +224,12 @@ function saveGame() {
       score = gameData.score;
       displayGame();
     };
-
     reader.readAsText(file);
-  }
+}
 
-  function displayGame() {
+function displayGame() {
     // Clear the existing game board
     gameBoard.innerHTML = "";
-
     // Create the cells and display their values
     for (var i = 0; i < 4; i++) {
         for (var j = 0; j < 4; j++) {
@@ -248,32 +242,30 @@ function saveGame() {
             cells[i][j].element = cell;
         }
     }
-
     // Update the score
     updateScore();
 }
 
-  function handleFileSelection(event) {
+function handleFileSelection(event) {
     const file = event.target.files[0];
     loadGameDataFromFile(file);
-  }
+}
 
 
-  // Attach event listeners to save and load buttons
-  var saveGameButton = document.getElementById("save-button");
-  saveGameButton.addEventListener("click", saveGame);
-  var loadGameButton = document.getElementById("load-button");
-  loadGameButton.addEventListener("click", function() {
+// Attach event listeners to save and load buttons
+var saveGameButton = document.getElementById("save-button");
+    saveGameButton.addEventListener("click", saveGame);
+var loadGameButton = document.getElementById("load-button");
+    loadGameButton.addEventListener("click", function() {
     const fileInput = document.createElement("input");
     fileInput.type = "file";
     fileInput.accept = "application/json";
     fileInput.addEventListener("change", handleFileSelection);
     fileInput.click();
-  });
+    });
 
 // Add event listener to the new game button
 var newGameButton = document.getElementById("new-game");
 newGameButton.addEventListener("click", startNewGame);
 
 startNewGame();
-}

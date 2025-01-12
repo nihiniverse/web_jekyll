@@ -5,7 +5,7 @@ title: Nihiniverse - Photo Add Text
 
 {% assign tools = site.data.tools %}
 {% assign default_type = "Text" %}
-{% assign current_page_type = "Text" %}
+{% assign current_page_type = "Photo" %}
 
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/tools.css">
 <div class="tools-container">

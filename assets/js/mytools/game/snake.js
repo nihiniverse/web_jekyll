@@ -180,10 +180,9 @@ var startButton = document.getElementById("startButton");
 // Start button click event handler
 startButton.addEventListener('click', function () {
     if (!isGameRunning) {
-      startGame();
-      isGameRunning = true;
+        startGame();
     } else {
-      restartGame();
+        restartGame();
     }
   });
 
@@ -191,6 +190,9 @@ startButton.addEventListener('click', function () {
 function startGame() {
     // Reset game state
     resetGame();
+    
+    // Set the game running flag
+    isGameRunning = true;
   
     // Start the game loop
     gameLoop();
@@ -200,7 +202,7 @@ function startGame() {
 function restartGame() {
     // Clear the game loop timeout if it exists
     if (gameLoopTimeout) {
-      clearTimeout(gameLoopTimeout);
+        clearTimeout(gameLoopTimeout);
     }
   
     // Reset game state
@@ -221,4 +223,4 @@ function resetGame() {
     snake.dy = 0;
     food.x = Math.floor(Math.random() * gridWidth);
     food.y = Math.floor(Math.random() * gridHeight);
-  }
+}

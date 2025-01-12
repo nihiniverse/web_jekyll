@@ -68,7 +68,7 @@
    {
       "name": "2048 Game",
       "description": "2048 Game",
-      "url": "mytools/2048.html",
+      "url": "mytools/game/2048.html",
       "type": "Game"
    },
    {
@@ -98,31 +98,31 @@
    {
       "name": "Tetris",
       "description": "Tetris",
-      "url": "mytools/tetris.html",
+      "url": "mytools/Game/tetris.html",
       "type": "Game"
    },
    {
       "name": "Snake",
       "description": "Snake",
-      "url": "mytools/snake.html",
+      "url": "mytools/Game/snake.html",
       "type": "Game"
    },
    {
       "name": "Stepping on Mines",
       "description": "Stepping on Mines",
-      "url": "mytools/steponmines.html",
+      "url": "mytools/Game/steponmines.html",
       "type": "Game"
    },
    {
       "name": "BlackJack",
       "description": "BlackJack",
-      "url": "mytools/blackjack.html",
+      "url": "mytools/Game/blackjack.html",
       "type": "Game"
    },
    {
       "name": "Cosmic Dodge",
       "description": "Cosmic Dodge",
-      "url": "mytools/cosmic_dodge.html",
+      "url": "mytools/Game/cosmic_dodge.html",
       "type": "Game"
    },
    {

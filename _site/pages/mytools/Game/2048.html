@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Nihiniverse - Photo To IG</title>
+    <title>Nihiniverse - 2048</title>
     <meta property="og:title" content="Nihiniverse" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
@@ -182,6 +182,8 @@
               
 <link rel="stylesheet" href="/assets/css/tools.css" />
 
+<link rel="stylesheet" href="/assets/css/2048.css" />
+
 <div class="tools-container">
     <div class="home-max-width max-content-container">
         <nav class="navigation-tools-nav navigation-linksroot-class-name1">
@@ -190,7 +192,7 @@
         
             
                 
-                <li class="Navigation-Link navigation-links-text1 clicked-link">
+                <li class="Navigation-Link navigation-links-text1 ">
                     <a href="/pages/tools.html?type=text" class="tool-type" data-type="text">Text </a>
                 </li>
             
@@ -232,7 +234,7 @@
         
             
                 
-                <li class="Navigation-Link navigation-links-text1 ">
+                <li class="Navigation-Link navigation-links-text1 clicked-link">
                     <a href="/pages/tools.html?type=game" class="tool-type" data-type="game">Game </a>
                 </li>
             
@@ -324,47 +326,26 @@
         } // No logging if toolsTable is not found
     });
 </script>
-        <span class="title-text1">Photo to IG</span>
-        <table class="table table_password noborder">
-            <tr>
-                <td class="right" colspan="2"><input type="file" id="uploadInput" /></td>
-            </tr>
-            <tr>
-                <td class="left">
-                    <label for="colorInput">Padding Color:</label>
-                </td>
-                <td class="right">
-                    <select class="styled-input" id="colorInput">
-                        <option value="auto">Auto</option>
-                        <option value="custom">Others</option>
-                        <option value="#000000" style="background-color: #000000;">Black</option>
-                        <option value="#ffffff" style="background-color: #ffffff;">White</option>
-                        <option value="#ff0000" style="background-color: #ff0000;">Red</option>
-                        <option value="#ffa500" style="background-color: #ffa500;">Orange</option>
-                        <option value="#ffff00" style="background-color: #ffff00;">Yellow</option>
-                        <option value="#008000" style="background-color: #008000;">Dark Green</option>
-                        <option value="#00ff00" style="background-color: #00ff00;">Green</option>
-                        <option value="#0000ff" style="background-color: #0000ff;">Blue</option>
-                        <option value="#4b0082" style="background-color: #4b0082;">Indigo</option>
-                        <option value="#a0a0a0" style="background-color: #a0a0a0;">Grey</option>
-                    </select>
-                </td>
-            </tr>
-            <tr>
-                <td class="left">
-                    <label for="customColorInput">Other Colors:</label>
-                </td>
-                <td class="right">
-                    <input class="styled-input" type="color" id="customColorInput" value="#ffffff" />
-                </td>
-            </tr>
-        </table>
-        <div class="center">
-            <canvas id="canvas"></canvas>
+        <span class="title-text1">2048</span>
+        <div class="game-containers">
+            <div class="game-center">
+                <p id="score">Score: 0</p>
+            </div>
+            <div class="game-center" id="gameboard"></div>
+            <div class="game-center">
+                <button class="btn center" id="new-game">Start</button>
+                <button class="btn center" id="save-button">Save </button>
+                <button class="btn center" id="load-button">Load </button>
+            </div>
+        </div>
+        <div id="reference">
+            <p>Reference: <br />
+            2048 was created by Gabriele Cirulli - https://github.com/gabrielecirulli/2048
+            </p>
         </div>
     </div>
 </div>
-<script src="/assets/js/mytools/photo/phototoig.js"></script>
+<script src="/assets/js/mytools/game/2048.js"></script>
 
 
           </main>

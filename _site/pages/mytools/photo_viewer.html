@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Nihiniverse - Photo To IG</title>
+    <title>Nihiniverse - Photo Viewer</title>
     <meta property="og:title" content="Nihiniverse" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
@@ -190,7 +190,7 @@
         
             
                 
-                <li class="Navigation-Link navigation-links-text1 clicked-link">
+                <li class="Navigation-Link navigation-links-text1 ">
                     <a href="/pages/tools.html?type=text" class="tool-type" data-type="text">Text </a>
                 </li>
             
@@ -206,7 +206,7 @@
         
             
                 
-                <li class="Navigation-Link navigation-links-text1 ">
+                <li class="Navigation-Link navigation-links-text1 clicked-link">
                     <a href="/pages/tools.html?type=photo" class="tool-type" data-type="photo">Photo </a>
                 </li>
             
@@ -324,47 +324,42 @@
         } // No logging if toolsTable is not found
     });
 </script>
-        <span class="title-text1">Photo to IG</span>
-        <table class="table table_password noborder">
+        <span class="title-text1">Photo Viewer</span>
+        <table class="table table_center noborder">
             <tr>
-                <td class="right" colspan="2"><input type="file" id="uploadInput" /></td>
+                <td class="right">
+                    <input class="styled-input" type="file" id="fileInput" multiple="" />
+                </td>
             </tr>
             <tr>
-                <td class="left">
-                    <label for="colorInput">Padding Color:</label>
-                </td>
                 <td class="right">
-                    <select class="styled-input" id="colorInput">
-                        <option value="auto">Auto</option>
-                        <option value="custom">Others</option>
-                        <option value="#000000" style="background-color: #000000;">Black</option>
-                        <option value="#ffffff" style="background-color: #ffffff;">White</option>
-                        <option value="#ff0000" style="background-color: #ff0000;">Red</option>
-                        <option value="#ffa500" style="background-color: #ffa500;">Orange</option>
-                        <option value="#ffff00" style="background-color: #ffff00;">Yellow</option>
-                        <option value="#008000" style="background-color: #008000;">Dark Green</option>
-                        <option value="#00ff00" style="background-color: #00ff00;">Green</option>
-                        <option value="#0000ff" style="background-color: #0000ff;">Blue</option>
-                        <option value="#4b0082" style="background-color: #4b0082;">Indigo</option>
-                        <option value="#a0a0a0" style="background-color: #a0a0a0;">Grey</option>
+                    <select class="styled-input" id="sizeOptions" onchange="changeImageSize()">
+                        <option value="default">Default</option>
+                        <option value="fixHeight">Fix Height</option>
+                        <option value="fixWidth">Fix Width</option>
+                        <option value="original">Original</option>
                     </select>
                 </td>
             </tr>
             <tr>
-                <td class="left">
-                    <label for="customColorInput">Other Colors:</label>
-                </td>
                 <td class="right">
-                    <input class="styled-input" type="color" id="customColorInput" value="#ffffff" />
+                    <input class="styled-input" type="number" id="fixHeightInput" value="500" onchange="changeImageSize()" style="display: none;" />
+                    <input class="styled-input" type="number" id="fixWidthInput" value="800" onchange="changeImageSize()" style="display: none;" />
+                </td>
+            </tr>
+            <tr>
+                <td class="right">
+                    <button class="center btn" id="previousBtn" data-toggle="tooltip" data-placement="bottom" title="Left (←)" onclick="previousImage()">Previous</button>
+                    <button class="center btn" id="loadBtn" data-toggle="tooltip" data-placement="bottom" title="Down (↓)" onclick="loadImages()">Load Images</button>
+                    <button class="center btn" id="fullscreenButton">Fullscreen</button>
+                    <button class="center btn" id="nextBtn" data-toggle="tooltip" data-placement="bottom" title="Right (→)" onclick="nextImage()">Next</button>
                 </td>
             </tr>
         </table>
-        <div class="center">
-            <canvas id="canvas"></canvas>
-        </div>
+        <div id="gallery"></div>
     </div>
 </div>
-<script src="/assets/js/mytools/photo/phototoig.js"></script>
+<script src="/assets/js/mytools/photo/photo_viewer.js"></script>
 
 
           </main>

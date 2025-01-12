@@ -279,43 +279,49 @@
         const typeFromURL = urlParams.get('type') || "text";
         const toolLinks = document.querySelectorAll('.tool-type');
         const toolsTable = document.getElementById('tools-table');
-        const toolsRows = toolsTable.querySelectorAll('.tool-row');
-        // Initially display only the default type tools
-        toolsRows.forEach(row => {
-            if (row.getAttribute('data-type') === typeFromURL) {
-                row.style.display = ''; // Show the row
-            } else {
-                row.style.display = 'none'; // Hide the row
-            }
-        });
-        // Highlight the default link
-        toolLinks.forEach(link => {
-            if (link.getAttribute('data-type') === typeFromURL) {
-                link.classList.add('clicked-link'); // Add clicked-link class to the default type
-            }
-        });
-       // Event listeners for tool links
-        toolLinks.forEach(link => {
-            link.addEventListener('click', function(event) {
-                event.preventDefault(); // Prevent default anchor click behavior
-                const selectedType = this.getAttribute('data-type');
-                // Update the title
-                document.getElementById('tool-type-title').textContent = this.textContent;
-                // Show only the rows that match the selected type
-                toolsRows.forEach(row => {
-                    if (row.getAttribute('data-type') === selectedType) {
-                        row.style.display = ''; // Show the row
-                    } else {
-                        row.style.display = 'none'; // Hide the row
+        // Proceed only if toolsTable exists
+        if (toolsTable) {
+            const toolsRows = toolsTable.querySelectorAll('.tool-row');
+            // Initially display only the default type tools
+            toolsRows.forEach(row => {
+                if (row.getAttribute('data-type') === typeFromURL) {
+                    row.style.display = ''; // Show the row
+                } else {
+                    row.style.display = 'none'; // Hide the row
+                }
+            });
+            // Proceed only if toolLinks has any elements
+            if (toolLinks.length) { // Check if there are any toolLinks
+                // Highlight the default link
+                toolLinks.forEach(link => {
+                    if (link.getAttribute('data-type') === typeFromURL) {
+                        link.classList.add('clicked-link'); // Add clicked-link class to the default type
                     }
                 });
-                // Remove active class from all links and add to the clicked link
-                toolLinks.forEach(l => l.classList.remove('clicked-link'));
-                this.classList.add('clicked-link');
-                // Update the URL without refreshing the page
-                window.history.pushState({}, '', `?type=${selectedType}`);
-            });
-        });
+                // Event listeners for tool links
+                toolLinks.forEach(link => {
+                    link.addEventListener('click', function(event) {
+                        event.preventDefault(); // Prevent default anchor click behavior
+                        const selectedType = this.getAttribute('data-type');
+                        // Update the title
+                        document.getElementById('tool-type-title').textContent = this.textContent;
+                        // Show only the rows that match the selected type
+                        toolsRows.forEach(row => {
+                            if (row.getAttribute('data-type') === selectedType) {
+                                row.style.display = ''; // Show the row
+                            } else {
+                                row.style.display = 'none'; // Hide the row
+                            }
+                        });
+                        // Remove active class from all links and add to the clicked link
+                        toolLinks.forEach(l => l.classList.remove('clicked-link'));
+                        this.classList.add('clicked-link');
+                        // Update the URL without refreshing the page
+                        window.history.pushState({}, '', `?type=${selectedType}`);
+                    });
+                });
+            } // No logging if toolLinks are not found
+        } // No logging if toolsTable is not found
     });
 </script>
         <span class="title-text1">Arithmetic Generator I</span>

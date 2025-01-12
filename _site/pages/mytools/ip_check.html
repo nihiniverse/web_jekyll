@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Nihiniverse - Photo To IG</title>
+    <title>Nihiniverse - IP Checker</title>
     <meta property="og:title" content="Nihiniverse" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
@@ -190,7 +190,7 @@
         
             
                 
-                <li class="Navigation-Link navigation-links-text1 clicked-link">
+                <li class="Navigation-Link navigation-links-text1 ">
                     <a href="/pages/tools.html?type=text" class="tool-type" data-type="text">Text </a>
                 </li>
             
@@ -215,7 +215,7 @@
         
             
                 
-                <li class="Navigation-Link navigation-links-text1 ">
+                <li class="Navigation-Link navigation-links-text1 clicked-link">
                     <a href="/pages/tools.html?type=web" class="tool-type" data-type="web">Web </a>
                 </li>
             
@@ -324,47 +324,48 @@
         } // No logging if toolsTable is not found
     });
 </script>
-        <span class="title-text1">Photo to IG</span>
+        <span class="title-text1">IP Checker</span>
         <table class="table table_password noborder">
             <tr>
-                <td class="right" colspan="2"><input type="file" id="uploadInput" /></td>
+                <td>Your IP Address:</td>
+                <td id="ipAddress"></td>
             </tr>
             <tr>
-                <td class="left">
-                    <label for="colorInput">Padding Color:</label>
-                </td>
-                <td class="right">
-                    <select class="styled-input" id="colorInput">
-                        <option value="auto">Auto</option>
-                        <option value="custom">Others</option>
-                        <option value="#000000" style="background-color: #000000;">Black</option>
-                        <option value="#ffffff" style="background-color: #ffffff;">White</option>
-                        <option value="#ff0000" style="background-color: #ff0000;">Red</option>
-                        <option value="#ffa500" style="background-color: #ffa500;">Orange</option>
-                        <option value="#ffff00" style="background-color: #ffff00;">Yellow</option>
-                        <option value="#008000" style="background-color: #008000;">Dark Green</option>
-                        <option value="#00ff00" style="background-color: #00ff00;">Green</option>
-                        <option value="#0000ff" style="background-color: #0000ff;">Blue</option>
-                        <option value="#4b0082" style="background-color: #4b0082;">Indigo</option>
-                        <option value="#a0a0a0" style="background-color: #a0a0a0;">Grey</option>
-                    </select>
-                </td>
+                <td>IP version:</td>
+                <td id="version"></td>
             </tr>
             <tr>
-                <td class="left">
-                    <label for="customColorInput">Other Colors:</label>
-                </td>
-                <td class="right">
-                    <input class="styled-input" type="color" id="customColorInput" value="#ffffff" />
-                </td>
+                <td>Your ISP:</td>
+                <td id="isp"></td>
+            </tr>
+            <tr>
+                <td>Your City:</td>
+                <td id="city"></td>
+            </tr>
+            <tr>
+                <td>Your Country:</td>
+                <td id="country"></td>
+            </tr>
+            <tr>
+                <td>Country Code (2 digit):</td>
+                <td id="country_code"></td>
+            </tr>
+            <tr>
+                <td>Country Code (3 digit):</td>
+                <td id="country_code_iso3"></td>
+            </tr>
+            <tr>
+                <td>Postal:</td>
+                <td id="postal"></td>
+            </tr>
+            <tr>
+                <td>Time Zone:</td>
+                <td id="utd_offset"></td>
             </tr>
         </table>
-        <div class="center">
-            <canvas id="canvas"></canvas>
-        </div>
     </div>
 </div>
-<script src="/assets/js/mytools/photo/phototoig.js"></script>
+<script src="/assets/js/mytools/ip_check.js"></script>
 
 
           </main>
