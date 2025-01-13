@@ -1,9 +1,5 @@
-var identifier = document.querySelector('.containers');
-if (identifier .getAttribute('title') === null){
-    identifier .setAttribute("title", "");
-
 var obj = document.createElement('audio');
-obj.src = location.origin + "/terrence_world/sound/firealarm.mp3";
+obj.src = location.origin + "/assets/sound/firealarm.mp3";
 obj.id = "audio";
 document.getElementById('main').appendChild(obj);
 
@@ -53,4 +49,4 @@ setButton.addEventListener("click", function() {
         }   
     }
 )
-}
+

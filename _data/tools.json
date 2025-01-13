@@ -133,8 +133,8 @@
    },
    {
       "name": "Timer",
-      "description": "Count Down Time",
-      "url": "mytools/counttime.html",
+      "description": "Timer",
+      "url": "mytools/timer.html",
       "type": "Others"
    },
    {

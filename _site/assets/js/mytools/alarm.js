@@ -1,7 +1,7 @@
 const setButton = document.getElementById("setbutton");
 const alarmTimeInput = document.getElementById("alarmtime");
 const messageDiv = document.getElementById("message");
-const alarmAudio = new Audio(location.origin + "/terrence_world/sound/firealarm.mp3");
+const alarmAudio = new Audio(location.origin + "/assets/sound/firealarm.mp3");
 
 var alarmIntervalId = null;
 var isAlarmSet = false;

@@ -1,0 +1,31 @@
+#game-area {
+    width: 400px;
+    height: 600px;
+    border: 1px solid black;
+    background-color: black;
+    position: relative;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+#spaceship {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: grey;
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.asteroid {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: brown;
+    position: absolute;
+}
+.timer {
+    font-size: 20px;
+    font-weight: bold;
+    color: red;
+}

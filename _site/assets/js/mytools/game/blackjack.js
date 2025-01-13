@@ -1,8 +1,6 @@
-var identifier = document.querySelector('.containers');
-if (identifier .getAttribute('title') === null){
-    identifier .setAttribute("title", "");
+var identifier = document.querySelector('.game-containers');
     // Card variables
-    var path = location.origin + "/terrence_world/img/cards/";
+    var path = location.origin + "/assets/images/cards/";
     var suits = ["hearts", "clubs", "diamonds", "spades"];
     var values = [
       "ace", "king", "queen", "jack",
@@ -168,5 +166,4 @@ if (identifier .getAttribute('title') === null){
       }
 
       disableButtons();
-}
 }

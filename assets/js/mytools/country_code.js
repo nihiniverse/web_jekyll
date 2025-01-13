@@ -1,5 +1,5 @@
 // Fetch the CSV data and parse it using PapaParse
-fetch(location.origin + '/terrence_world/data/csv/country-codes.csv')
+fetch(location.origin + '/data/csv/country-codes.csv')
     .then(response => response.text())
     .then(data => {
         const parsedData = Papa.parse(data, { header: true }).data;

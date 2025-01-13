@@ -1,0 +1,29 @@
+.card-container {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.card {
+	width: 100px;
+	height: 150px;
+	margin: 5px;
+}
+.points {
+	font-size: 16px;
+	font-weight: bold;
+}
+.win {
+	color: blue;
+}
+.loss {
+	color: red;
+}
+.tie {
+	color: green;
+}
+#win_message {
+	font-size: 24px;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
