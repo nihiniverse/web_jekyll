@@ -12,7 +12,7 @@ title: Nihiniverse - Photo To IG
     <div class="home-max-width max-content-container">
         {% include nav_tools.md default_type=current_page_type current_page_type=current_page_type %}
         <span class="title-text1">Photo to IG</span>
-        <table class = "table table_password noborder">
+        <table class = "table table50 noborder">
             <tr>
                 <td class="right" colspan="2"><input type="file" id="uploadInput"></td>
             </tr>

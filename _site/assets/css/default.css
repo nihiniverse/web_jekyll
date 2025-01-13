@@ -288,6 +288,12 @@
   width: 90px;
 }
 
+.image-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .home-image-tick {
   margin-left: 5px;
   margin-right: 5px;
@@ -571,6 +577,51 @@
 
 .right {
   text-align: center;
+}
+
+.table40 {
+  border-collapse: collapse;
+  width: 40%;
+  margin: 8px;
+  margin-bottom: 10px;
+  border: none;
+  justify-content: center;
+}
+
+.table50 {
+  border-collapse: collapse;
+  width: 50%;
+  margin: 8px;
+  margin-bottom: 10px;
+  border: none;
+  justify-content: center;
+}
+
+.table60 {
+  border-collapse: collapse;
+  width: 60%;
+  margin: 8px;
+  margin-bottom: 10px;
+  border: none;
+  justify-content: center;
+}
+
+.table_center {
+  border-collapse: collapse;
+  width: auto;
+  margin: auto;
+  border: none;
+}
+
+.table40 th,
+.table40 td,
+.table50 th,
+.table50 td,
+.table60 th,
+.table60 td,
+.table_center th,
+.table_center td {
+  border: none;
 }
 
 .form_class1 {

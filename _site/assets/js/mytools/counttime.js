@@ -1,13 +1,17 @@
-var obj = document.createElement('audio');
-obj.src = location.origin + "/assets/sound/firealarm.mp3";
-obj.id = "audio";
-document.getElementById('main').appendChild(obj);
+var audio = document.createElement('audio');
+audio.id = "audio"; // Keep the ID for easy access
+document.getElementById('main').appendChild(audio);
 
+var bellImage = document.getElementById('bell');
 var setButton = document.getElementById("setbutton");
 var timer;
 var isTimerSet = false;
 setButton.addEventListener("click", function() {
     const countdownElement = document.getElementById('countdown');
+    const soundSelect = document.getElementById('soundSelect');
+    const selectedSound = soundSelect.value;
+    // Update audio source based on selection
+    console.log(location.origin + "/assets/sound/" + selectedSound);
     if (!isTimerSet) {
         var hours = document.getElementById('hours').value;
         var minutes = document.getElementById('minutes').value;
@@ -15,12 +19,13 @@ setButton.addEventListener("click", function() {
         var totalSeconds = (hours * 3600) + (minutes * 60) + Number(seconds);
 
         var audio = document.getElementById('audio');
+        audio.src = location.origin + "/assets/sound/" + selectedSound;
         timer = setInterval(function() {
             totalSeconds--;
             if (totalSeconds < 0) {
             clearInterval(timer);
             audio.play();
-            alert('Timer finished!');
+            bellImage.style.display = 'block';
             } else {
             var displayHours = Math.floor(totalSeconds / 3600);
             var displayMinutes = Math.floor((totalSeconds % 3600) / 60);
@@ -46,6 +51,7 @@ setButton.addEventListener("click", function() {
         countdownElement.innerText = '';
         isTimerSet = false;
         setButton.innerText = "Start";
+        bellImage.style.display = 'none';
         }   
     }
 )

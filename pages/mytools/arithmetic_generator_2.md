@@ -12,7 +12,7 @@ title: Nihiniverse - Arithmetic Generator II
     <div class="home-max-width max-content-container">
         {% include nav_tools.md default_type=current_page_type current_page_type=current_page_type %}
         <span class="title-text1">Arithmetic Generator II</span>
-        <table class = "table table_password noborder">
+        <table class = "table table50 noborder">
             <tr>
                 <td class="left noborder"><label for="num-no">No. of Number</label></td>
                 <td class="right noborder">

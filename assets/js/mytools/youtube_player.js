@@ -1,7 +1,3 @@
-var identifier = document.querySelector('.containers');
-if (identifier .getAttribute('title') === null){
-    identifier .setAttribute("title", "");
-
 function openPlayer() {
     var url = document.getElementById("url").value;
     var width = document.getElementById("width").value;
@@ -49,39 +45,34 @@ function openPlayer() {
     }, true); // Use capture phase to ensure event handling within the new window
   })
 }
-
+function getYouTubeVideoID(url) {
+  var videoID = "";
+  var pattern = /(?:\?v=|\/embed\/|\.be\/|\/watch\?v=|\/v\/|youtu\.be\/|\/embed\/|\/v=|^youtu\.be\/)([^#\&\?]*).*/;
+  var match = url.match(pattern);
   
-  function getYouTubeVideoID(url) {
-    var videoID = "";
-    var pattern = /(?:\?v=|\/embed\/|\.be\/|\/watch\?v=|\/v\/|youtu\.be\/|\/embed\/|\/v=|^youtu\.be\/)([^#\&\?]*).*/;
-    var match = url.match(pattern);
-    
-    if (match && match[1]) {
-      videoID = match[1];
-    }
-    
-    return videoID;
+  if (match && match[1]) {
+    videoID = match[1];
   }
-
-  document.getElementById("width").addEventListener("input", function() {
-    var width = parseInt(this.value);
-    var aspectRatioOption = document.getElementById("aspectRatio");
-    var heightInput = document.getElementById("height");
-    
-    if (aspectRatioOption.checked) {
-      var height = Math.round((width * 9) / 16);
-      heightInput.value = height;
-    }
-  });
-
-  document.getElementById("height").addEventListener("input", function() {
-    var height = parseInt(this.value);
-    var aspectRatioOption = document.getElementById("aspectRatio");
-    var widthInput = document.getElementById("width");
-    
-    if (aspectRatioOption.checked) {
-      var width = Math.round((height * 16) / 9);
-      widthInput.value = width;
-    }
-  });
+  
+  return videoID;
 }
+document.getElementById("width").addEventListener("input", function() {
+  var width = parseInt(this.value);
+  var aspectRatioOption = document.getElementById("aspectRatio");
+  var heightInput = document.getElementById("height");
+  
+  if (aspectRatioOption.checked) {
+    var height = Math.round((width * 9) / 16);
+    heightInput.value = height;
+  }
+});
+document.getElementById("height").addEventListener("input", function() {
+  var height = parseInt(this.value);
+  var aspectRatioOption = document.getElementById("aspectRatio");
+  var widthInput = document.getElementById("width");
+  
+  if (aspectRatioOption.checked) {
+    var width = Math.round((height * 16) / 9);
+    widthInput.value = width;
+  }
+});

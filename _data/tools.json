@@ -152,7 +152,7 @@
    {
       "name": "Image Viewer",
       "description": "View Images",
-      "url": "mytools/photo/photo_viewer.html",
+      "url": "mytools/photo_viewer.html",
       "type": "Photo"
    }
 ]

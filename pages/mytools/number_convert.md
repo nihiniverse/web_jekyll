@@ -12,7 +12,7 @@ title: Nihiniverse - Number Convertor
     <div class="home-max-width max-content-container">
         {% include nav_tools.md default_type=current_page_type current_page_type=current_page_type %}
         <span class="title-text1">Number Convertor</span>
-        <table class = 'table table_password noborder'>
+        <table class = 'table table50 noborder'>
             <tr>
                 <td class="left noborder"><label for="inputvalue">Input Value:</label></td>
                 <td class="right noborder"><input class = "styled-input" type="text" id="inputvalue" value = 100></td>

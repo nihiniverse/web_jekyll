@@ -12,7 +12,7 @@ title: Nihiniverse - IP Checker
     <div class="home-max-width max-content-container">
         {% include nav_tools.md default_type=current_page_type current_page_type=current_page_type %}
         <span class="title-text1">IP Checker</span>
-        <table class = "table table_password noborder">
+        <table class = "table table50 noborder">
             <tr>
                 <td>Your IP Address:</td>
                 <td id="ipAddress"></td>

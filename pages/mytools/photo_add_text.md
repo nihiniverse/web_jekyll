@@ -12,7 +12,7 @@ title: Nihiniverse - Photo Add Text
     <div class="home-max-width max-content-container">
         {% include nav_tools.md default_type=current_page_type current_page_type=current_page_type %}
         <span class="title-text1">Photo Add Text</span>
-        <table class = "table table_password noborder">
+        <table class = "table table60 noborder">
         <tr>
             <td class="left"><label for="fileInput">Upload a photo:</label></td>
             <td class="right"><input class = "styled-input" type="file" id="fileInput" accept="image/*"></td>

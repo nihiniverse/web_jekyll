@@ -12,7 +12,7 @@ title: Nihiniverse - Random Number
     <div class="home-max-width max-content-container">
         {% include nav_tools.md default_type=current_page_type current_page_type=current_page_type %}
         <span class="title-text1">Random Number</span>
-        <table class = 'table table_password noborder'>
+        <table class = 'table table50 noborder'>
             <tr>
                 <td class="left noborder"><label for="min">Min. Value:</label></td>
                 <td class="right noborder"><input class = "styled-input2" type="number" id="min" name="min" value="0"></td>

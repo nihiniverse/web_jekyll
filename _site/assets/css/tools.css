@@ -33,16 +33,17 @@
 }
 
 /* table */
-.table_password {
-    border-collapse: collapse;
-    width: 50%;
-    margin:8px;
-    margin-bottom: 10px;
-    border: none;
-}
 .table40 {
     border-collapse: collapse;
     width: 40%;
+    margin:8px;
+    margin-bottom: 10px;
+    border: none;
+    justify-content: center;
+}
+.table50 {
+    border-collapse: collapse;
+    width: 50%;
     margin:8px;
     margin-bottom: 10px;
     border: none;
@@ -86,6 +87,8 @@
 }
 .table40 th,
 .table40 td,
+.table50 th,
+.table50 td,
 .table60 th,
 .table60 td,
 .table_center th,
@@ -93,9 +96,7 @@
 .table_word_count td,
 .table_word_count th,
 .table_identity td,
-.table_identity th,
-.table_password td,
-.table_password th {
+.table_identity th{
     border: none;
 }
 /* checkbox */
