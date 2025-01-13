@@ -28,12 +28,12 @@
             </nav>
         </navigation-links-wrapper>
         </div>
-        <div data-role="BurgerMenu" class="navigation-burger-menu">
-        <svg viewBox="0 0 1024 1024" class="navigation-icon1">
+            <div data-role="BurgerMenu" class="navigation-burger-menu">
+            <svg viewBox="0 0 1024 1024" class="navigation-icon1">
             <path
             d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
             ></path>
-        </svg>
+            </svg>
         </div>
         <div data-role="MobileMenu" class="mobile-menu">
         <div class="navigation-nav2">
@@ -85,14 +85,14 @@
       const links = document.querySelectorAll('.navigation-links-nav a');
       // Check local storage for an active link
       const activeLink = localStorage.getItem('activeLink');
-      const footerLinks = document.querySelectorAll('.footer-links'); // Select footer links
       const aboutLink = document.getElementById('about');
-      console.log(activeLink);
+      const burgerMenu = document.querySelector('[data-role="BurgerMenu"]');
+      const mobileMenu = document.querySelector('[data-role="MobileMenu"]');
+      const closeMenuButton = document.querySelector('[data-role="CloseMobileMenu"]');
       if (activeLink) {
           // Apply the bold class to the active link
           links.forEach(link => {
               if (link.href === activeLink) {
-
                   link.classList.add('clicked-link');
               }
           });
@@ -109,13 +109,15 @@
               localStorage.setItem('activeLink', this.href);
           });
       });
-        // Add click event for footer links
-        footerLinks.forEach(link1 => {
-            link1.addEventListener('click', function() {
-                links.forEach(l => l.classList.remove('clicked-link')); // Remove clicked class
-                aboutLink.classList.add('clicked-link'); // Add clicked class to About link
-                localStorage.setItem('activeLink', "{{ site.baseurl }}/index.html"); // Adjust the link as necessary
-            });
+        // Toggle mobile menu visibility
+        burgerMenu.addEventListener('click', function() {
+            mobileMenu.classList.toggle('active'); // Toggle the 'active' class for showing/hiding the menu
+        });
+
+        // Close mobile menu when close button is clicked
+        closeMenuButton.addEventListener('click', function() {
+            mobileMenu.classList.remove('active'); // Remove the 'active' class to hide the menu
         });
     });
+
 </script>

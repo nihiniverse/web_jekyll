@@ -55,4 +55,12 @@ title: Nihiniverse - About
         </div>
     </div>
 </div>
+<script>
+    const toolLinks = document.querySelectorAll('.tool-type');
+    var aboutLink = document.querySelector('.Navigation-Link a[id="about"]');
+    toolLinks.forEach(l => l.classList.remove('clicked-link'));
+    if (aboutLink) {
+        aboutLink.parentElement.classList.add('clicked-link');
+    }
+</script>
 

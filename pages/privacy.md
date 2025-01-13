@@ -48,3 +48,11 @@ permanant link: /pages/privacy.html
             <p>If you have any questions or concerns about this Privacy Policy, please contact us.</p></span>
     </div>
 </div>
+<script>
+    const toolLinks = document.querySelectorAll('.tool-type');
+    var aboutLink = document.querySelector('.Navigation-Link a[id="about"]');
+    toolLinks.forEach(l => l.classList.remove('clicked-link'));
+    if (aboutLink) {
+        aboutLink.parentElement.classList.add('clicked-link');
+    }
+</script>

@@ -23,3 +23,11 @@ permanant link: /pages/uncopyright.html
        Our aim is to promote a culture of openness and collaboration that fosters creativity, innovation, and progress.</p></span>
   </div>
 </div>
+<script>
+    const toolLinks = document.querySelectorAll('.tool-type');
+    var aboutLink = document.querySelector('.Navigation-Link a[id="about"]');
+    toolLinks.forEach(l => l.classList.remove('clicked-link'));
+    if (aboutLink) {
+        aboutLink.parentElement.classList.add('clicked-link');
+    }
+</script>
