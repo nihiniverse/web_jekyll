@@ -581,7 +581,7 @@ button.btn_s {
     left: 0; /* Align to the left */
     width: 100%; /* Full width */
     height: 100%; /* Full height */
-    background-color: rgba(255, 255, 255); /* Semi-transparent background */
+    background-color: rgba(255, 255, 255,0.8); /* Semi-transparent background */
     z-index: 1000; /* Ensure it is above other content */
     overflow-y: auto; /* Enable scrolling if content is taller than the viewport */
     padding: 20px; /* Add some padding */
