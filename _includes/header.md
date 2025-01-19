@@ -1,4 +1,6 @@
 <header data-role="Header" class="navigation-header">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7342271923368602"
+     crossorigin="anonymous"></script>
     <div class="navigation-max-width">
         <img alt="logo" src="{{ site.baseurl }}/assets/images/layouts/logo_top.png" width="231" height="54" />
         <div class="navigation-nav1">
@@ -14,16 +16,16 @@
                 <span><a href="{{ site.baseurl }}/index.html" data-load id="about">About</a></span>
             </span>
             <span class="Navigation-Link navigation-links-text1 ">
-                <span><a href="{{ site.baseurl }}/pages/bookmarks.html" data-load>Bookmarks</a></span>
+                <span><a href="{{ site.baseurl }}/pages/bookmarks.html" data-load id="bookmarks">Bookmarks</a></span>
             </span>
             <span class="Navigation-Link navigation-links-text1 ">
-                <span><a href="{{ site.baseurl }}/pages/tools.html" data-load>Tools</a></span>
+                <span><a href="{{ site.baseurl }}/pages/tools.html" data-load id="tools">Tools</a></span>
             </span>
             <span class="Navigation-Link navigation-links-text1 ">
-                <span><a href="{{ site.baseurl }}/pages/resources.html" data-load>Resources</a></span>
+                <span><a href="{{ site.baseurl }}/pages/resources.html" data-load id="resources">Resources</a></span>
             </span>
             <span class="Navigation-Link navigation-links-text1 ">
-                <span><a href="{{ site.baseurl }}/pages/learn.html" data-load>Learn</a></span>
+                <span><a href="{{ site.baseurl }}/pages/learn.html" data-load id="learn">Learn</a></span>
             </span>
             </nav>
         </navigation-links-wrapper>
@@ -38,7 +40,7 @@
         <div data-role="MobileMenu" class="mobile-menu">
         <div class="navigation-nav2">
             <div class="navigation-container">
-            <img alt="logo" src="{{ site.baseurl }}/assets/images/layouts/logo_top.png" width="231" height="54"/>
+            <img alt="logo" src="{{ site.baseurl }}/assets/images/layouts/logo_top.png" width="231" height="54">
             <div
                 data-role="CloseMobileMenu"
                 class="navigation-close-mobile-menu"
@@ -54,24 +56,23 @@
             class="navigation-links-wrapper-ulep"
             rootclassname="navigation-linksundefined"
             >
-            <!--NavigationLinks component-->
             <nav
                 class="navigation-links-nav1 navigation-linksroot-class-name1"
             >
                 <span class="Navigation-Link navigation-links-text2 ">
-                <span>About</span>
+                    <span><a href="{{ site.baseurl }}/index.html" data-load id="about">About</a></span>
                 </span>
                 <span class="Navigation-Link navigation-links-text2 ">
-                <span>Bookmarks</span>
+                    <span><a href="{{ site.baseurl }}/pages/bookmarks.html" data-load>Bookmarks</a></span>
                 </span>
                 <span class="Navigation-Link navigation-links-text2 ">
-                <span>Tools</span>
+                    <span><a href="{{ site.baseurl }}/pages/tools.html" data-load>Tools</a></span>
                 </span>
                 <span class="Navigation-Link navigation-links-text2 ">
-                <span>Resources</span>
+                    <span><a href="{{ site.baseurl }}/pages/resources.html" data-load>Resources</a></span>
                 </span>
                 <span class="Navigation-Link navigation-links-text2 ">
-                <span>Learn</span>
+                    <span><a href="{{ site.baseurl }}/pages/learn.html" data-load>Learn</a></span>
                 </span>
             </nav>
             </navigation-links-wrapper-ulep>
@@ -121,3 +122,7 @@
     });
 
 </script>
+<script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+></script>

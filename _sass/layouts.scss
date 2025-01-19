@@ -165,27 +165,11 @@
 .navigation-links-nav li {
     margin-right: 20px;
 }
-@media(max-width: 767px) {
-    .navigation-links-nav {
-      align-items: flex-start;
-      flex-direction: column;
-    }
-}
 .navigation-links-nav1 {
     flex: 0 0 auto;
     display: flex;
     align-items: center;
     flex-direction: row;
-}
-@media(max-width: 767px) {
-    .navigation-links-nav1 {
-        align-items: flex-start;
-    flex-direction: column;
-    }
-    .navigation-links-nav2 {
-        align-items: flex-start;
-    flex-direction: column;
-    }
 }
 .navigation-linksroot-class-name1 {
     margin-right: var(--dl-space-space-threeunits);
@@ -209,14 +193,6 @@ color: var(--dl-color-scheme-brown);
 .navigation-burger-menu {
     display: none;
 }
-@media(max-width: 991px) {
-    .navigation-nav1 {
-        display: none;
-    }
-    .navigation-burger-menu {
-        display: flex;
-    }
-}
 .navigation-icon1 {
     fill: var(--dl-color-scheme-darkblue);
     width: 24px;
@@ -234,18 +210,6 @@ color: var(--dl-color-scheme-brown);
 }
 .navigation-links-wrapper-ulep {
     display: contents;
-}
-.mobile-menu {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: white;
-    z-index: 1000;
-}
-.mobile-menu.active {
-    display: block;
 }
 //image
 .footer-image {
@@ -609,3 +573,113 @@ button.btn_s {
 .fade-in.show {
     opacity: 1; /* Fully visible */
 }
+//Media
+.mobile-menu {
+    display: none; /* Initially hidden */
+    position: fixed; /* Fixed positioning */
+    top: 0; /* Align to the top */
+    left: 0; /* Align to the left */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(255, 255, 255); /* Semi-transparent background */
+    z-index: 1000; /* Ensure it is above other content */
+    overflow-y: auto; /* Enable scrolling if content is taller than the viewport */
+    padding: 20px; /* Add some padding */
+}
+.mobile-menu.active {
+    display: block;
+}
+@media(max-width: 767px) {
+    .navigation-links-nav {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+}
+@media(max-width: 767px) {
+    .slide {
+      min-width: 75%;
+    }
+  }
+@media(max-width: 767px) {
+    .navigation-nav1 {
+        display: none;
+    }
+    .navigation-nav2 {
+        display: none;
+    }
+    .navigation-burger-menu {
+        display: flex;
+    }
+}
+@media(max-width: 767px) {
+    .navigation-links-nav1 {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .navigation-links-nav2 {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+}
+@media(max-width: 767px) {
+    .section-container {
+      padding-top: var(--dl-space-space-twounits);
+      padding-bottom: var(--dl-space-space-twounits);
+    }
+    .footer-container {
+      padding-top: var(--dl-space-space-twounits);
+      padding-bottom: var(--dl-space-space-twounits);
+    }
+    .slide {
+      min-width: 80%;
+      margin-left: var(--dl-space-space-halfunit);
+      margin-right: var(--dl-space-space-halfunit);
+    }
+    .button-md {
+      text-align: center;
+    }
+    .button-secondary {
+      text-align: center;
+      margin-right: 0px;
+      margin-bottom: var(--dl-space-space-unit);
+    }
+    .button-secondary-white {
+      text-align: center;
+      margin-right: 0px;
+      margin-bottom: var(--dl-space-space-unit);
+    }
+    .button-md-border {
+      text-align: center;
+    }
+}
+@media(max-width: 767px) {
+    .button-primary {
+      padding-top: 20px;
+      padding-left: 24px;
+      padding-right: 24px;
+      padding-bottom: 20px;
+    }
+    .button-outline {
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+    .button-md-border {
+      padding-left: 22px;
+      padding-right: 22px;
+    }
+    .mobile-menu {
+      padding: 16px;
+    }
+}
+@media(max-width: 767px) {
+    .navigation-links-nav {
+      align-items: flex-start;
+      flex-direction: column;
+    }
+    .navigation-links-text2 {
+      margin-left: 0;
+      margin-bottom: var(--dl-space-space-unit);
+    }
+ }

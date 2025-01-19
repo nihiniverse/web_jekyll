@@ -1,0 +1,102 @@
+#categories {
+    display: block;
+    width: 80%;
+    margin-top: 10px; /* Space above the categories */
+}
+.cat1, .cat2 {
+    align-items: center; /* Center text vertically */
+}
+.cat1 {
+    color: var(--dl-color-scheme-brown1);
+    border: none;
+    font-weight: bold;
+    font-size: 26px;
+}
+.cat2 {
+    color: var(--dl-color-scheme-brown2);
+    margin-left: 15px;
+    border: none;
+    font-weight: bold;
+    font-size: 24px;
+}
+button.bbtn {
+    background-color: var(--dl-color-scheme-brown); /* Bootstrap primary color */
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer; /* Pointer on hover */
+    border-radius: 4px; /* Rounded corners */
+    padding: 0;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+}
+button.bbtn:hover {
+    background-color: var(--dl-color-scheme-dark-brown); /* Darker shade on hover */
+}
+.bcat1 {
+    background-color: var(--dl-color-scheme-brown1);
+    font-weight: bold;
+    font-size: 28px;
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+.bcat2 {
+    background-color: var(--dl-color-scheme-brown2);
+    font-weight: bold;
+    font-size: 23px;
+    width: 24px;
+    height: 24px;
+    margin-left: 15px;
+    align-items: center; /* Center vertically */
+    justify-content: center; /* Center horizontally */
+}
+/* Basic table styling */
+.bookmark_table {
+    width: 100%;
+    border-collapse: collapse; /* Ensures borders are combined */
+}
+
+/* Header styling */
+.bookmark_table th {
+    color: var(--dl-color-scheme-black);
+    text-align: left;
+    font-weight: bold;
+    border-bottom: 2px solid black; /* Black line under header */
+}
+/* Cell styling */
+.bookmark_table td {
+    font-weight: normal;
+    padding: 8px; /* Padding for data cells */
+    text-align: left; /* Align data text to the left */
+    border-bottom: 1px solid #ddd; /* Light border under each row */
+}
+.links2 {
+    margin-left: 15px; /* Indent links under each subcategory */
+    font-size: 24px; /* Font size for links */
+}
+.links2 a {
+    color: var(--dl-color-scheme-brown2); /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+.links2 a:hover {
+    color: var(--dl-color-scheme-dark-brown);
+    text-decoration: underline; /* Underline on hover */
+}
+.links3 {
+    margin-left: 20px; /* Indent links under each subcategory */
+    font-size: 20px; /* Font size for links */
+}
+.links3 a {
+    color: var(--dl-color-scheme-brown); /* Link color */
+    text-decoration: none; /* Remove underline */
+}
+.links3 a:hover {
+    color: var(--dl-color-scheme-dark-brown);
+    text-decoration: underline; /* Underline on hover */
+}
+.hidden {
+    display: none;
+}

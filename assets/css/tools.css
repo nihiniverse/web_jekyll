@@ -33,30 +33,6 @@
 }
 
 /* table */
-.table40 {
-    border-collapse: collapse;
-    width: 40%;
-    margin:8px;
-    margin-bottom: 10px;
-    border: none;
-    justify-content: center;
-}
-.table50 {
-    border-collapse: collapse;
-    width: 50%;
-    margin:8px;
-    margin-bottom: 10px;
-    border: none;
-    justify-content: center;
-}
-.table60 {
-    border-collapse: collapse;
-    width: 60%;
-    margin:8px;
-    margin-bottom: 10px;
-    border: none;
-    justify-content: center;
-}
 .table_identity {
     border-collapse: collapse;
     width: 100%;
@@ -75,24 +51,10 @@
     justify-content: center;
     text-align: center;
 }
-.table_center {
-    border-collapse: collapse;
-    width: auto;
-    margin: auto;
-    border: none;
-}
 .table_word_count th,
 .table_word_count td {
     padding: 4px 4px; /* Adjust padding to reduce row height */
 }
-.table40 th,
-.table40 td,
-.table50 th,
-.table50 td,
-.table60 th,
-.table60 td,
-.table_center th,
-.table_center td,
 .table_word_count td,
 .table_word_count th,
 .table_identity td,

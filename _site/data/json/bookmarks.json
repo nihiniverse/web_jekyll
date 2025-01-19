@@ -1,0 +1,283 @@
+[
+   {
+      "name": "Chatgpt",
+      "description": "OpenAI - Chatgpt",
+      "url": "https://chatgpt.com/",
+      "icon-Path": "",
+      "Cat1": "AI Tools",
+      "Cat2": ""
+   },
+   {
+      "name": "Yeschat.ai",
+      "description": "Image Titler-AI-Powered Image Titling",
+      "url": "https://www.yeschat.ai/gpts-9t55QZk8HB6-Image-Titler",
+      "icon-Path": "",
+      "Cat1": "AI Tools",
+      "Cat2": "Image"
+   },
+   {
+      "name": "Adobe Express",
+      "description": "Remove Image Background",
+      "url": "https://new.express.adobe.com/tools/remove-background",
+      "icon-Path": "",
+      "Cat1": "AI Tools",
+      "Cat2": "Image"
+   },
+   {
+      "name": "Dewatermark",
+      "description": "Remove Watermark",
+      "url": "https://dewatermark.ai/zh-TW",
+      "icon-Path": "",
+      "Cat1": "AI Tools",
+      "Cat2": "Image"
+   },
+   {
+      "name": "Python_Expert_4o",
+      "description": "Python Programming",
+      "url": "https://poe.com/Python_Expert_4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Programming"
+   },
+
+   {
+      "name": "HTML_JS_CSS_Expert4o",
+      "description": "HTML, JS and CSS Programming",
+      "url": "https://poe.com/HTML_JS_CSS_Expert4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Programming"
+   },
+   {
+      "name": "Jekyll_Expert_4o",
+      "description": "Web Programming in Jekyll",
+      "url": "https://poe.com/Jekyll_Expert_4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Programming"
+   },
+   {
+      "name": "JavaScript_Expert4o",
+      "description": "JavaScript Programming",
+      "url": "https://poe.com/JavaScript_Expert4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Programming"
+   },
+   {
+      "name": "SOL_Expert_4o",
+      "description": "SOL Programming",
+      "url": "https://poe.com/SOL_Expert_4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Programming"
+   },
+   {
+      "name": "CPP_Expert_4o",
+      "description": "C++ Programming",
+      "url": "https://poe.com/CPP_Expert_4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Programming"
+   },
+   {
+      "name": "Typescript_Expect4o",
+      "description": "Typescript Programming",
+      "url": "https://poe.com/Typescript_Expect4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Programming"
+   },
+   {
+      "name": "Java_Expect4o",
+      "description": "Java Programming",
+      "url": "https://poe.com/Java_Expert_4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Programming"
+   },
+   {
+      "name": "Go_Expert_4o",
+      "description": "GO Programming",
+      "url": "https://poe.com/Go_Expert_4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Programming"
+   },
+   {
+      "name": "VisualBasic_Expert4o",
+      "description": "Visual Basic Programming",
+      "url": "https://poe.com/VisualBasic_Expert4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Programming"
+   },
+   {
+      "name": "Scratch_Expert_4o",
+      "description": "Scratch Programming",
+      "url": "https://poe.com/Scratch_Expert_4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Programming"
+   },
+   {
+      "name": "Real_Photo_Gene_FLUX",
+      "description": "Photorealistic Image Generator",
+      "url": "https://poe.com/Real_Photo_Gene_FLUX",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Photo"
+   },
+   {
+      "name": "Logo_AI_Designer",
+      "description": "AI Logo Design service",
+      "url": "https://poe.com/Logo_AI_Designer",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Photo"
+   },
+   {
+      "name": "Sketch_AI_Artist",
+      "description": "AI Book Cover Designs",
+      "url": "https://poe.com/Sketch_AI_Artist",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Photo"
+   },
+   {
+      "name": "BookCoverDesign",
+      "description": "AI Book Cover Designs",
+      "url": "https://poe.com/BookCoverDesign",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Photo"
+   },
+   {
+      "name": "Sketch_AI_Artist",
+      "description": "AI high-contrast pencil sketch",
+      "url": "https://poe.com/Sketch_AI_Artist",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Photo"
+   },
+   {
+      "name": "Anime_Image_FLUX",
+      "description": "AI generating high-quality anime-themed images",
+      "url": "https://poe.com/Anime_Image_FLUX",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Photo"
+   },
+   {
+      "name": "Real_Imagination",
+      "description": "illustrates text prompts into high-quality visual images.",
+      "url": "https://poe.com/Real_Imagination",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Photo"
+   },
+   {
+      "name": "Pokemon_Styler",
+      "description": "AI generating all animes in the pokemon style",
+      "url": "https://poe.com/Pokemon_Styler",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Photo"
+   },
+   {
+      "name": "Hogwarts_Styler",
+      "description": "AI generating all animes in the Style of Hogwarts School of Witchcraft and Wizardry",
+      "url": "https://poe.com/Hogwarts_Styler",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Photo"
+   },
+   {
+      "name": "Excel_Expert_4o",
+      "description": "AI MS Excel Expert",
+      "url": "https://poe.com/Excel_Expert_4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Office"
+   },
+   {
+      "name": "Word_Expert_4o",
+      "description": "AI MS Word Expert",
+      "url": "https://poe.com/Word_Expert_4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Office"
+   },
+   {
+      "name": "PowerPoint_Expert_4o",
+      "description": "AI MS Powerpoint Expert",
+      "url": "https://poe.com/PowerPoint_Expert_4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Office"
+   },
+   {
+      "name": "PDF_Summary_Expert4o",
+      "description": "AI PDF Summariser",
+      "url": "https://poe.com/PDF_Summary_Expert4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Office"
+   },
+   {
+      "name": "Generalist_AI",
+      "description": "Inquiries across diverse academic and professional domains",
+      "url": "https://poe.com/Generalist_AI",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "General"
+   },
+   {
+      "name": "Single_dog3",
+      "description": "解決你的感情問題",
+      "url": "https://poe.com/single_dog3",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Others"
+   },
+   {
+      "name": "Password_generator4o",
+      "description": "Professional Password Generator",
+      "url": "https://poe.com/Password_generator4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Others"
+   },
+   {
+      "name": "Email_WriterExpert4o",
+      "description": "Professional Email Writing AI assistant",
+      "url": "https://poe.com/Email_WriterExpert4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Others"
+   },
+   {
+      "name": "Book_Writer_Expert4o",
+      "description": "Professional Book Writer",
+      "url": "https://poe.com/Book_Writer_Expert4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Others"
+   },
+   {
+      "name": "SEO_Expert_4o",
+      "description": " SEO professional expert",
+      "url": "https://poe.com/SEO_Expert_4o",
+      "icon-Path": "",
+      "Cat1": "POE",
+      "Cat2": "Others"
+   },
+   {
+      "name": "Binance",
+      "description": "Python Programming",
+      "url": "https://www.binance.com",
+      "icon-Path": "",
+      "Cat1": "Cryptocurrency",
+      "Cat2": "Exchange"
+   }
+]
