@@ -274,8 +274,24 @@
    },
    {
       "name": "Binance",
-      "description": "Python Programming",
+      "description": "The world's leading blockchain ecosystem and digital asset exchange.",
       "url": "https://www.binance.com",
+      "icon-Path": "",
+      "Cat1": "Cryptocurrency",
+      "Cat2": "Exchange"
+   },
+   {
+      "name": "CoinBase",
+      "description": "a secure online platform for cryptocurrency.",
+      "url": "https://www.coinbase.com/",
+      "icon-Path": "",
+      "Cat1": "Cryptocurrency",
+      "Cat2": "Exchange"
+   },
+   {
+      "name": "Bybit",
+      "description": "a Leading Derivatives Trading Platform. (Not Available for HK)",
+      "url": "https://www.bybit.com/",
       "icon-Path": "",
       "Cat1": "Cryptocurrency",
       "Cat2": "Exchange"

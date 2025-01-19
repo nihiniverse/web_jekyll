@@ -1,6 +1,14 @@
 <header data-role="Header" class="navigation-header">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7342271923368602"
      crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R20J35V57C"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R20J35V57C');
+    </script>
     <div class="navigation-max-width">
         <img alt="logo" src="{{ site.baseurl }}/assets/images/layouts/logo_top.png" width="231" height="54" />
         <div class="navigation-nav1">

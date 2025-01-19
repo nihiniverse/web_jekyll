@@ -60,6 +60,14 @@
           <header data-role="Header" class="navigation-header">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7342271923368602"
      crossorigin="anonymous"></script>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-R20J35V57C"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-R20J35V57C');
+    </script>
     <div class="navigation-max-width">
         <img alt="logo" src="/assets/images/layouts/logo_top.png" width="231" height="54" />
         <div class="navigation-nav1">
@@ -186,7 +194,9 @@
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
 ></script>
           <main class="home-main">
-              <div class="home-hero">
+              <link rel="stylesheet" href="/assets/css/index.css" />
+
+<div class="home-hero">
 <div class="home-about section-container">
     <div class="home-max-width max-content-container">
         <div class="home-wrapper">
@@ -227,6 +237,8 @@
                 </div>
                 <a href="https://www.facebook.com/Nihiniverse/" target="_blank" rel="noopener noreferrer">
                 <img alt="facebook" src="assets/images/social_media/Facebook.png" class="home-image-social" /></a>
+                <a href="https://github.com/nihiniverse/" target="_blank" rel="noopener noreferrer">
+                <img alt="facebook" src="assets/images/social_media/GitHub.png" class="home-image-social" /></a>
             </div>
         <div class="home-image-container">
             <img alt="image" src="assets/images/Main1.jpg" class="home-image" width="460" height="512" />
@@ -235,12 +247,15 @@
     </div>
 </div>
 <script>
-    const toolLinks = document.querySelectorAll('.tool-type');
-    var aboutLink = document.querySelector('.Navigation-Link a[id="about"]');
-    toolLinks.forEach(l => l.classList.remove('clicked-link'));
-    if (aboutLink) {
-        aboutLink.parentElement.classList.add('clicked-link');
-    }
+    document.addEventListener("DOMContentLoaded", function() {
+        const navLinks = document.querySelectorAll('.navigation-links-nav a');
+        navLinks.forEach(link => link.classList.remove('clicked-link'));
+        console.log(navLinks);
+        var aboutLink = document.querySelector('.Navigation-Link a[id="about"]');
+        if (aboutLink) {
+            aboutLink.classList.add('clicked-link');
+        }
+    });
 </script>
 
 </div>

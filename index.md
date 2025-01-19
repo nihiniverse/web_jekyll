@@ -2,6 +2,7 @@
 layout: default
 title: Nihiniverse - About
 ---
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/index.css"/>
 <div class="home-hero">
 <div class="home-about section-container">
     <div class="home-max-width max-content-container">
@@ -43,6 +44,8 @@ title: Nihiniverse - About
                 </div>
                 <a href="https://www.facebook.com/Nihiniverse/" target="_blank" rel="noopener noreferrer">
                 <img alt="facebook" src="assets/images/social_media/Facebook.png"  class="home-image-social"/></a>
+                <a href="https://github.com/nihiniverse/" target="_blank" rel="noopener noreferrer">
+                <img alt="facebook" src="assets/images/social_media/GitHub.png"  class="home-image-social"/></a>
             </div>
         <div class="home-image-container">
             <img
@@ -56,11 +59,14 @@ title: Nihiniverse - About
     </div>
 </div>
 <script>
-    const toolLinks = document.querySelectorAll('.tool-type');
-    var aboutLink = document.querySelector('.Navigation-Link a[id="about"]');
-    toolLinks.forEach(l => l.classList.remove('clicked-link'));
-    if (aboutLink) {
-        aboutLink.parentElement.classList.add('clicked-link');
-    }
+    document.addEventListener("DOMContentLoaded", function() {
+        const navLinks = document.querySelectorAll('.navigation-links-nav a');
+        navLinks.forEach(link => link.classList.remove('clicked-link'));
+        console.log(navLinks);
+        var aboutLink = document.querySelector('.Navigation-Link a[id="about"]');
+        if (aboutLink) {
+            aboutLink.classList.add('clicked-link');
+        }
+    });
 </script>
 
