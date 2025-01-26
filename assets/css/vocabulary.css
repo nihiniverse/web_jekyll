@@ -1,0 +1,22 @@
+/* General styles for all levels */
+.word-container {
+    margin-bottom: 5px; /* Space between words */
+}
+
+/* Styles for each level */
+.level-0 { font-size: 24px; font-weight: bold; }  /* Level 0 (Parent) */
+.level-1 { font-size: 22px; }                      /* Level 1 */
+.level-2 { font-size: 20px; }                      /* Level 2 */
+.level-3 { font-size: 18px; }                      /* Level 3 */
+.level-4 { font-size: 16px; }                      /* Level 4 */
+.level-5 { font-size: 14px; }                      /* Level 5 */
+.level-6 { font-size: 12px; }                      /* Level 6 */
+.level-7 { font-size: 10px; }                      /* Level 7 */
+.level-8 { font-size: 9px; }                       /* Level 8 */
+.level-9 { font-size: 8px; }                       /* Level 9 */
+.level-10 { font-size: 7px; }                      /* Level 10 */
+
+/* Optional: Style for the toggle button */
+.toggle-button {
+    margin-left: 10px; /* Space between word and button */
+}

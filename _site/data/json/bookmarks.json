@@ -5,7 +5,35 @@
       "url": "https://chatgpt.com/",
       "icon-Path": "",
       "Cat1": "AI Tools",
-      "Cat2": ""
+      "Cat2": "",
+      "Cat3": ""
+   },
+   {
+      "name": "Claude",
+      "description": "Anthropic - Claude",
+      "url": "https://www.anthropic.com/",
+      "icon-Path": "",
+      "Cat1": "AI Tools",
+      "Cat2": "",
+      "Cat3": ""
+   },
+   {
+      "name": "Perplexity",
+      "description": "An AI research engine",
+      "url": "https://www.perplexity.ai/",
+      "icon-Path": "",
+      "Cat1": "AI Tools",
+      "Cat2": "",
+      "Cat3": ""
+   },
+   {
+      "name": "Wolfram Alpha",
+      "description": "Compute expert-level answers",
+      "url": "https://www.wolframalpha.com/",
+      "icon-Path": "",
+      "Cat1": "AI Tools",
+      "Cat2": "Calculation",
+      "Cat3": ""
    },
    {
       "name": "Yeschat.ai",
@@ -13,15 +41,26 @@
       "url": "https://www.yeschat.ai/gpts-9t55QZk8HB6-Image-Titler",
       "icon-Path": "",
       "Cat1": "AI Tools",
-      "Cat2": "Image"
+      "Cat2": "Image",
+      "Cat3": ""
    },
+   {
+      "name": "Canva Magic Studio",
+      "description": "Simplify and enhance the creative process",
+      "url": "https://www.canva.com/",
+      "icon-Path": "",
+      "Cat1": "AI Tools",
+      "Cat2": "Image",
+      "Cat3": ""
+   },   
    {
       "name": "Adobe Express",
       "description": "Remove Image Background",
       "url": "https://new.express.adobe.com/tools/remove-background",
       "icon-Path": "",
       "Cat1": "AI Tools",
-      "Cat2": "Image"
+      "Cat2": "Image",
+      "Cat3": ""
    },
    {
       "name": "Dewatermark",
@@ -29,15 +68,35 @@
       "url": "https://dewatermark.ai/zh-TW",
       "icon-Path": "",
       "Cat1": "AI Tools",
-      "Cat2": "Image"
+      "Cat2": "Image",
+      "Cat3": ""
+   },
+   {
+      "name": "Grammarly",
+      "description": "Grammar and spelling correction and full-sentence rewrites.",
+      "url": "https://app.grammarly.com/",
+      "icon-Path": "",
+      "Cat1": "AI Tools",
+      "Cat2": "Writing",
+      "Cat3": ""
+   },
+   {
+      "name": "Word Tune",
+      "description": "rephrasing sentences to improve clarity, tone, and style",
+      "url": "https://app.wordtune.com/",
+      "icon-Path": "",
+      "Cat1": "AI Tools",
+      "Cat2": "Writing",
+      "Cat3": ""
    },
    {
       "name": "Python_Expert_4o",
       "description": "Python Programming",
       "url": "https://poe.com/Python_Expert_4o",
       "icon-Path": "",
-      "Cat1": "POE",
-      "Cat2": "Programming"
+      "Cat1": "AI Tools",
+      "Cat2": "POE",
+      "Cat3": "Programming"
    },
 
    {
@@ -46,7 +105,8 @@
       "url": "https://poe.com/HTML_JS_CSS_Expert4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Programming"
+      "Cat2": "Programming",
+      "Cat3": ""
    },
    {
       "name": "Jekyll_Expert_4o",
@@ -54,7 +114,8 @@
       "url": "https://poe.com/Jekyll_Expert_4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Programming"
+      "Cat2": "Programming",
+      "Cat3": ""
    },
    {
       "name": "JavaScript_Expert4o",
@@ -62,7 +123,8 @@
       "url": "https://poe.com/JavaScript_Expert4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Programming"
+      "Cat2": "Programming",
+      "Cat3": ""
    },
    {
       "name": "SOL_Expert_4o",
@@ -70,7 +132,8 @@
       "url": "https://poe.com/SOL_Expert_4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Programming"
+      "Cat2": "Programming",
+      "Cat3": ""
    },
    {
       "name": "CPP_Expert_4o",
@@ -78,7 +141,8 @@
       "url": "https://poe.com/CPP_Expert_4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Programming"
+      "Cat2": "Programming",
+      "Cat3": ""
    },
    {
       "name": "Typescript_Expect4o",
@@ -86,7 +150,8 @@
       "url": "https://poe.com/Typescript_Expect4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Programming"
+      "Cat2": "Programming",
+      "Cat3": ""
    },
    {
       "name": "Java_Expect4o",
@@ -94,7 +159,8 @@
       "url": "https://poe.com/Java_Expert_4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Programming"
+      "Cat2": "Programming",
+      "Cat3": ""
    },
    {
       "name": "Go_Expert_4o",
@@ -102,7 +168,8 @@
       "url": "https://poe.com/Go_Expert_4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Programming"
+      "Cat2": "Programming",
+      "Cat3": ""
    },
    {
       "name": "VisualBasic_Expert4o",
@@ -110,7 +177,8 @@
       "url": "https://poe.com/VisualBasic_Expert4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Programming"
+      "Cat2": "Programming",
+      "Cat3": ""
    },
    {
       "name": "Scratch_Expert_4o",
@@ -118,7 +186,8 @@
       "url": "https://poe.com/Scratch_Expert_4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Programming"
+      "Cat2": "Programming",
+      "Cat3": ""
    },
    {
       "name": "Real_Photo_Gene_FLUX",
@@ -126,7 +195,8 @@
       "url": "https://poe.com/Real_Photo_Gene_FLUX",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Photo"
+      "Cat2": "Photo",
+      "Cat3": ""
    },
    {
       "name": "Logo_AI_Designer",
@@ -134,7 +204,8 @@
       "url": "https://poe.com/Logo_AI_Designer",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Photo"
+      "Cat2": "Photo",
+      "Cat3": ""
    },
    {
       "name": "Sketch_AI_Artist",
@@ -142,7 +213,8 @@
       "url": "https://poe.com/Sketch_AI_Artist",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Photo"
+      "Cat2": "Photo",
+      "Cat3": ""
    },
    {
       "name": "BookCoverDesign",
@@ -150,7 +222,8 @@
       "url": "https://poe.com/BookCoverDesign",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Photo"
+      "Cat2": "Photo",
+      "Cat3": ""
    },
    {
       "name": "Sketch_AI_Artist",
@@ -158,7 +231,8 @@
       "url": "https://poe.com/Sketch_AI_Artist",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Photo"
+      "Cat2": "Photo",
+      "Cat3": ""
    },
    {
       "name": "Anime_Image_FLUX",
@@ -166,7 +240,8 @@
       "url": "https://poe.com/Anime_Image_FLUX",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Photo"
+      "Cat2": "Photo",
+      "Cat3": ""
    },
    {
       "name": "Real_Imagination",
@@ -174,7 +249,8 @@
       "url": "https://poe.com/Real_Imagination",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Photo"
+      "Cat2": "Photo",
+      "Cat3": ""
    },
    {
       "name": "Pokemon_Styler",
@@ -182,7 +258,8 @@
       "url": "https://poe.com/Pokemon_Styler",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Photo"
+      "Cat2": "Photo",
+      "Cat3": ""
    },
    {
       "name": "Hogwarts_Styler",
@@ -190,7 +267,8 @@
       "url": "https://poe.com/Hogwarts_Styler",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Photo"
+      "Cat2": "Photo",
+      "Cat3": ""
    },
    {
       "name": "Excel_Expert_4o",
@@ -198,7 +276,8 @@
       "url": "https://poe.com/Excel_Expert_4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Office"
+      "Cat2": "Office",
+      "Cat3": ""
    },
    {
       "name": "Word_Expert_4o",
@@ -206,7 +285,8 @@
       "url": "https://poe.com/Word_Expert_4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Office"
+      "Cat2": "Office",
+      "Cat3": ""
    },
    {
       "name": "PowerPoint_Expert_4o",
@@ -214,7 +294,8 @@
       "url": "https://poe.com/PowerPoint_Expert_4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Office"
+      "Cat2": "Office",
+      "Cat3": ""
    },
    {
       "name": "PDF_Summary_Expert4o",
@@ -222,7 +303,8 @@
       "url": "https://poe.com/PDF_Summary_Expert4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Office"
+      "Cat2": "Office",
+      "Cat3": ""
    },
    {
       "name": "Generalist_AI",
@@ -230,7 +312,8 @@
       "url": "https://poe.com/Generalist_AI",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "General"
+      "Cat2": "General",
+      "Cat3": ""
    },
    {
       "name": "Single_dog3",
@@ -238,7 +321,8 @@
       "url": "https://poe.com/single_dog3",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Others"
+      "Cat2": "Others",
+      "Cat3": ""
    },
    {
       "name": "Password_generator4o",
@@ -246,7 +330,8 @@
       "url": "https://poe.com/Password_generator4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Others"
+      "Cat2": "Others",
+      "Cat3": ""
    },
    {
       "name": "Email_WriterExpert4o",
@@ -254,7 +339,8 @@
       "url": "https://poe.com/Email_WriterExpert4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Others"
+      "Cat2": "Others",
+      "Cat3": ""
    },
    {
       "name": "Book_Writer_Expert4o",
@@ -262,7 +348,8 @@
       "url": "https://poe.com/Book_Writer_Expert4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Others"
+      "Cat2": "Others",
+      "Cat3": ""
    },
    {
       "name": "SEO_Expert_4o",
@@ -270,7 +357,8 @@
       "url": "https://poe.com/SEO_Expert_4o",
       "icon-Path": "",
       "Cat1": "POE",
-      "Cat2": "Others"
+      "Cat2": "Others",
+      "Cat3": ""
    },
    {
       "name": "Binance",
@@ -278,7 +366,8 @@
       "url": "https://www.binance.com",
       "icon-Path": "",
       "Cat1": "Cryptocurrency",
-      "Cat2": "Exchange"
+      "Cat2": "Exchange",
+      "Cat3": ""
    },
    {
       "name": "CoinBase",
@@ -286,7 +375,8 @@
       "url": "https://www.coinbase.com/",
       "icon-Path": "",
       "Cat1": "Cryptocurrency",
-      "Cat2": "Exchange"
+      "Cat2": "Exchange",
+      "Cat3": ""
    },
    {
       "name": "Bybit",
@@ -294,6 +384,7 @@
       "url": "https://www.bybit.com/",
       "icon-Path": "",
       "Cat1": "Cryptocurrency",
-      "Cat2": "Exchange"
+      "Cat2": "Exchange",
+      "Cat3": ""
    }
 ]

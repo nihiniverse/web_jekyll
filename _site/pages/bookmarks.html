@@ -230,9 +230,25 @@ document.addEventListener("DOMContentLoaded", () => {
                 categories[bookmark.Cat1][bookmark.Cat2].push(bookmark);
             }
             else {
-                categories[bookmark.Cat1]['bookmarks'] = [];
+                if (!categories[bookmark.Cat1]['bookmarks']) {
+                    categories[bookmark.Cat1]['bookmarks'] = [];
+                }
                 categories[bookmark.Cat1]['bookmarks'].push(bookmark);
             }
+            // if (bookmark.Cat3) {
+            //     if (!categories[bookmark.Cat1][bookmark.Cat2][bookmark.Cat3]) {
+            //         categories[bookmark.Cat1][bookmark.Cat2][bookmark.Cat3] = [];
+            //         catdivs[bookmark.Cat1][bookmark.Cat2][bookmark.Cat3] = [];
+            //         buttons[bookmark.Cat1][bookmark.Cat2][bookmark.Cat3] = [];
+            //     }
+            //     categories[bookmark.Cat1][bookmark.Cat2][bookmark.Cat3].push(bookmark);
+            // }
+            // else {
+            //     if (!categories[bookmark.Cat1][bookmark.Cat2]['bookmarks']) {
+            //         categories[bookmark.Cat1][bookmark.Cat2]['bookmarks'] = [];
+            //     }
+            //     categories[bookmark.Cat1][bookmark.Cat2]['bookmarks'].push(bookmark);
+            // }
         });
 
         // Create category elements

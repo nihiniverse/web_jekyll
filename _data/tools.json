@@ -154,5 +154,11 @@
       "description": "View Images",
       "url": "mytools/photo_viewer.html",
       "type": "Photo"
+   },
+   {
+      "name": "Vocabulary List",
+      "description": "vocabulary stored",
+      "url": "mytools/vocabulary.html",
+      "type": "Text"
    }
 ]

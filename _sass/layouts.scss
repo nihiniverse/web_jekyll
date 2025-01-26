@@ -605,7 +605,9 @@ button.btn_s {
         display: none;
     }
     .navigation-nav2 {
-        display: none;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
     }
     .navigation-burger-menu {
         display: flex;

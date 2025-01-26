@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Nihiniverse - IP Checker</title>
+    <title>Nihiniverse - Vocabulary</title>
     <meta property="og:title" content="Nihiniverse" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
@@ -197,6 +197,8 @@
               
 <link rel="stylesheet" href="/assets/css/tools.css" />
 
+<link rel="stylesheet" href="/assets/css/vocabulary.css" />
+
 <div class="tools-container">
     <div class="home-max-width max-content-container">
         <nav class="navigation-tools-nav navigation-linksroot-class-name1">
@@ -205,7 +207,7 @@
         
             
                 
-                <li class="Navigation-Link navigation-links-text1 ">
+                <li class="Navigation-Link navigation-links-text1 clicked-link">
                     <a href="/pages/tools.html?type=text" class="tool-type" data-type="text">Text </a>
                 </li>
             
@@ -230,7 +232,7 @@
         
             
                 
-                <li class="Navigation-Link navigation-links-text1 clicked-link">
+                <li class="Navigation-Link navigation-links-text1 ">
                     <a href="/pages/tools.html?type=web" class="tool-type" data-type="web">Web </a>
                 </li>
             
@@ -341,48 +343,14 @@
         } // No logging if toolsTable is not found
     });
 </script>
-        <span class="title-text1">IP Checker</span>
-        <table class="table table50 noborder">
-            <tr>
-                <td>Your IP Address:</td>
-                <td id="ipAddress"></td>
-            </tr>
-            <tr>
-                <td>IP version:</td>
-                <td id="version"></td>
-            </tr>
-            <tr>
-                <td>Your ISP:</td>
-                <td id="isp"></td>
-            </tr>
-            <tr>
-                <td>Your City:</td>
-                <td id="city"></td>
-            </tr>
-            <tr>
-                <td>Your Country:</td>
-                <td id="country"></td>
-            </tr>
-            <tr>
-                <td>Country Code (2 digit):</td>
-                <td id="country_code"></td>
-            </tr>
-            <tr>
-                <td>Country Code (3 digit):</td>
-                <td id="country_code_iso3"></td>
-            </tr>
-            <tr>
-                <td>Postal:</td>
-                <td id="postal"></td>
-            </tr>
-            <tr>
-                <td>Time Zone:</td>
-                <td id="utd_offset"></td>
-            </tr>
-        </table>
+        <span class="title-text1">Vocabulary</span>
+        <div class="containers_center">
+            <div id="wordTree" class="word-tree">
+            </div>
+        </div>
     </div>
 </div>
-<script src="/assets/js/mytools/ip_check.js"></script>
+<script src="/assets/js/mytools/vocabulary.js"></script>
 
 
           </main>
