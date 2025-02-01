@@ -30,10 +30,10 @@
                 <span><a href="{{ site.baseurl }}/pages/tools.html" data-load id="tools">Tools</a></span>
             </span>
             <span class="Navigation-Link navigation-links-text1 ">
-                <span><a href="{{ site.baseurl }}/pages/resources.html" data-load id="resources">Resources</a></span>
+                <span><a href="{{ site.baseurl }}/pages/articles.html" data-load id="articles">Articles</a></span>
             </span>
             <span class="Navigation-Link navigation-links-text1 ">
-                <span><a href="{{ site.baseurl }}/pages/learn.html" data-load id="learn">Learn</a></span>
+                <span><a href="{{ site.baseurl }}/pages/gallery.html" data-load id="Gallery">Gallery</a></span>
             </span>
             </nav>
         </navigation-links-wrapper>
@@ -77,10 +77,10 @@
                     <span><a href="{{ site.baseurl }}/pages/tools.html" data-load>Tools</a></span>
                 </span>
                 <span class="Navigation-Link navigation-links-text2 ">
-                    <span><a href="{{ site.baseurl }}/pages/resources.html" data-load>Resources</a></span>
+                    <span><a href="{{ site.baseurl }}/pages/articles.html" data-load>Articles</a></span>
                 </span>
                 <span class="Navigation-Link navigation-links-text2 ">
-                    <span><a href="{{ site.baseurl }}/pages/learn.html" data-load>Learn</a></span>
+                    <span><a href="{{ site.baseurl }}/pages/gallery.html" data-load>Gallery</a></span>
                 </span>
             </nav>
             </navigation-links-wrapper-ulep>
