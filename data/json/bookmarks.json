@@ -18,6 +18,15 @@
       "Cat3": ""
    },
    {
+      "name": "DeepSeek Chat",
+      "description": "Anthropic - Claude",
+      "url": "https://chat.deepseek.com/",
+      "icon-Path": "",
+      "Cat1": "AI Tools",
+      "Cat2": "",
+      "Cat3": ""
+   },
+   {
       "name": "Perplexity",
       "description": "An AI research engine",
       "url": "https://www.perplexity.ai/",
@@ -63,9 +72,36 @@
       "Cat3": ""
    },
    {
+      "name": "Photoroom",
+      "description": "Remove Image Background",
+      "url": "https://www.photoroom.com/zh/tools/background-remover",
+      "icon-Path": "",
+      "Cat1": "AI Tools",
+      "Cat2": "Image",
+      "Cat3": ""
+   },
+   {
       "name": "Dewatermark",
       "description": "Remove Watermark",
       "url": "https://dewatermark.ai/zh-TW",
+      "icon-Path": "",
+      "Cat1": "AI Tools",
+      "Cat2": "Image",
+      "Cat3": ""
+   },   
+   {
+      "name": "Kling AI",
+      "description": "Text to Image, 166 credits per month",
+      "url": "https://klingai.com/text-to-image/",
+      "icon-Path": "",
+      "Cat1": "AI Tools",
+      "Cat2": "Image",
+      "Cat3": ""
+   },
+   {
+      "name": "Hailuo AI",
+      "description": "Text/Images to Videos, 1000 credits, 100 credits per daily login",
+      "url": "https://hailuoai.video/",
       "icon-Path": "",
       "Cat1": "AI Tools",
       "Cat2": "Image",
