@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Nihiniverse - Privacy</title>
+    <title>Nihiniverse - Gallery</title>
     <meta property="og:title" content="Nihiniverse" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
@@ -194,8 +194,23 @@
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
 ></script>
           <main class="home-main">
-              <div class="section-container">
-    <div id="gallery" class="gallery">
+              <link rel="stylesheet" href="/assets/css/gallery.css" />
+
+<div class="section-container">
+    <div class="tab-controls">
+        <label for="itemsPerPageSelect">Images per page:</label>
+        <select class="styled-input" id="itemsPerPageSelect">
+            <option value="20">20</option>
+            <option value="50">50</option>
+            <option value="100">100</option>
+        </select>
+        <button class="btn" onclick="confirmItemsPerPage()">Confirm</button>
+    </div>
+    <div id="gallery" class="gallery"></div>
+    <div class="pagination-controls">
+        <button class="btn" id="prevPage" onclick="changePage(-1)" disabled="">Previous</button>
+        <span class="home-text2" id="currentPageDisplay">Page 1</span> <!-- Display for current page -->
+        <button class="btn" id="nextPage" onclick="changePage(1)">Next</button>
     </div>
     <script src="/assets/js/gallery.js"></script>
 </div>

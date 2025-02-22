@@ -1,7 +1,22 @@
+.tab-controls {
+    margin-bottom: 20px;
+    display: flex; /* Use flexbox for alignment */
+    align-items: center; /* Center items vertically */
+}
+
+.pagination-controls {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Adjusted min width */
     gap: 10px;
+    padding: 10px; /* Added padding for better spacing */
+    width: 100%;
 }
 
 .gallery-item {
@@ -14,4 +29,32 @@
     width: 100%;
     height: auto;
     display: block;
+    transition: transform 0.3s; /* Smooth zoom effect on hover */
+}
+
+.gallery-item:hover img {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.tab-controls label {
+    margin-right: 10px; /* Space between label and select */
+    font-size: 20px;
+}
+
+.tab-controls select {
+    width: 80px;
+    padding: 7px; /* Add padding to the select box */
+    margin-right: 10px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px; /* Rounded corners */
+    font-size: 20px; /* Increase font size for readability */
+    cursor: pointer; /* Change cursor on hover */
+}
+#currentPageDisplay {
+    font-size: 20px; /* Size of the text */
+    margin: 0 15px; /* Margin to provide space on both sides */
+    color: var(--dl-color-scheme-brown);
+    display: flex; /* Use flexbox for alignment if needed */
+    align-items: center; /* Center the text vertically */
+    font-weight: normal; /* Use 'normal' for regular weight */
 }
